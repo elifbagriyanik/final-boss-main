@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gargoyles Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+   
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script>
+
+     <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+    <div class="test-kapsayici">
+        <h1><strong>🏰 Gargoyles</strong></h1>
+        <p class="alt-baslik">"Gündüzleri taş, geceleri savaşçı..." New York'un koruyucularını tanıyor musun?</p>
+
+        <div class="soru-karti">
+            <h3>1. Gargoyle’lar güneş doğduğunda neye dönüşürler?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_a" name="q1">
+                    <label for="q1_a">Toza</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_b" name="q1" value="dogru">
+                    <label for="q1_b">Taşa (Heykele)</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_c" name="q1">
+                    <label for="q1_c">İnsana</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_d" name="q1">
+                    <label for="q1_d">Kuşa</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. Gargoyle’ların lideri olan, mor tenli karakterin adı nedir?</h3>
+            
+                 <img src="../cizgifilmresim/Gargoyle/Goliath.jpeg" alt="gargoyle" style="width: 750px; height: 400px;"> 
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_a" name="q2">
+                    <label for="q2_a">Hudson</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_b" name="q2" value="dogru">
+                    <label for="q2_b">Goliath</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_c" name="q2">
+                    <label for="q2_c">Brooklyn</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_d" name="q2">
+                    <label for="q2_d">Lexington</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. Gargoyle’lar ne zaman aktif hale gelir?</h3>
+            
+                 <img src="../cizgifilmresim/Gargoyle/Goliath tas kırma.gif" alt="Goliath tas kırma" style="width: 750px; height: 400px;"> 
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_a" name="q3">
+                    <label for="q3_a">Sadece dolunayda</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_b" name="q3" value="dogru">
+                    <label for="q3_b">Güneş batınca (Gece)</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_c" name="q3">
+                    <label for="q3_c">Güneş doğunca</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_d" name="q3">
+                    <label for="q3_d">İstedikleri zaman</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. Gargoyle’lar modern zamanda hangi şehri korumaktadır?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_a" name="q4">
+                    <label for="q4_a">Londra</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_b" name="q4" value="dogru">
+                    <label for="q4_b">New York (Manhattan)</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_c" name="q4">
+                    <label for="q4_c">Paris</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_d" name="q4">
+                    <label for="q4_d">Gotham</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. Xanatos kaleyi neden gökdeleninin tepesine taşıtmıştır?</h3>
+            
+                 <img src="../cizgifilmresim/Gargoyle/kule.jpeg" alt="kule"style="width: 750px; height: 400px;" > 
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_a" name="q5">
+                    <label for="q5_a">Manzara için</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_b" name="q5" value="dogru">
+                    <label for="q5_b">Laneti kırıp onları uyandırmak için</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_c" name="q5">
+                    <label for="q5_c">Müze yapmak için</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_d" name="q5">
+                    <label for="q5_d">Ev olarak kullanmak için</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. Gargoyle’ların en yakın insan dostu olan polisin adı nedir?</h3>
+            
+                 <img src="../cizgifilmresim/Gargoyle/Goliath & Elisa .gif" alt="Goliath ve Elisa" style="width: 750px; height: 400px;"> 
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_a" name="q6" value="dogru">
+                    <label for="q6_a">Elisa Maza</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_b" name="q6">
+                    <label for="q6_b">Lois Lane</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_c" name="q6">
+                    <label for="q6_c">Ellen Ripley</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_d" name="q6">
+                    <label for="q6_d">Sarah Connor</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. Goliath’ın eski aşkı olan ama düşmana dönüşen dişi gargoyle kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_a" name="q7">
+                    <label for="q7_a">Angela</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_b" name="q7" value="dogru">
+                    <label for="q7_b">Demona</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_c" name="q7">
+                    <label for="q7_c">Elisa</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_d" name="q7">
+                    <label for="q7_d">Selina</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. Grubun en yaşlı, bilge ve bir gözü yaralı üyesi kimdir?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_a" name="q8">
+                    <label for="q8_a">Broadway</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_b" name="q8" value="dogru">
+                    <label for="q8_b">Hudson</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_c" name="q8">
+                    <label for="q8_c">Brooklyn</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_d" name="q8">
+                    <label for="q8_d">Goliath</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. Lexington’ın gruptaki rolü nedir?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_a" name="q9">
+                    <label for="q9_a">Savaşçı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_b" name="q9" value="dogru">
+                    <label for="q9_b">Teknoloji uzmanı ve pilot</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_c" name="q9">
+                    <label for="q9_c">Büyücü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_d" name="q9">
+                    <label for="q9_d">Aşçı</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. Grubun maskotu olan, köpeğe benzeyen gargoyle’un adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_a" name="q10">
+                    <label for="q10_a">Spot</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_b" name="q10" value="dogru">
+                    <label for="q10_b">Bronx</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_c" name="q10">
+                    <label for="q10_c">Fang</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_d" name="q10">
+                    <label for="q10_d">Rex</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. Broadway’in en sevdiği şeyler nelerdir?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_a" name="q11">
+                    <label for="q11_a">Savaşmak</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_b" name="q11" value="dogru">
+                    <label for="q11_b">Yemek yemek ve eski filmler izlemek</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_c" name="q11">
+                    <label for="q11_c">Kitap okumak</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_d" name="q11">
+                    <label for="q11_d">Uçmak</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. Brooklyn’in karakteri nasıldır?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_a" name="q12">
+                    <label for="q12_a">Çok ciddi ve yaşlı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_b" name="q12" value="dogru">
+                    <label for="q12_b">Havalı, asi ve modern dünyaya meraklı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_c" name="q12">
+                    <label for="q12_c">Korkak</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_d" name="q12">
+                    <label for="q12_d">Sessiz</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. Xanatos’un asistanı ve daha sonra eşi olan kadın kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_a" name="q13" value="dogru">
+                    <label for="q13_a">Fox</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_b" name="q13">
+                    <label for="q13_b">Cat</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_c" name="q13">
+                    <label for="q13_c">Viper</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_d" name="q13">
+                    <label for="q13_d">Rose</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. Xanatos neden gargoyle şeklinde robotik bir zırh giyer?</h3>
+            
+                 <img src="../cizgifilmresim/Gargoyle/Gargoyles - kırmızı.jpeg" alt="gargoyles kırmızı" style="width: 750px; height: 400px;"> 
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_a" name="q14" value="dogru">
+                    <label for="q14_a">Gargoyle’larla eşit şartlarda savaşabilmek için</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_b" name="q14">
+                    <label for="q14_b">Uçmaya üşendiği için</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_c" name="q14">
+                    <label for="q14_c">Cadılar Bayramı için</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_d" name="q14">
+                    <label for="q14_d">Üşüdüğü için</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Avalon adasında Goliath kimi bulur?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_a" name="q15" value="dogru">
+                    <label for="q15_a">Kendi kızı Angela'yı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_b" name="q15">
+                    <label for="q15_b">Demona'yı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_c" name="q15">
+                    <label for="q15_c">Xanatos'u</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_d" name="q15">
+                    <label for="q15_d">Elisa'yı</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. "Macbeth" karakteri kiminle ölümsüzlük bağına sahiptir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_a" name="q16">
+                    <label for="q16_a">Goliath</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_b" name="q16" value="dogru">
+                    <label for="q16_b">Demona</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_c" name="q16">
+                    <label for="q16_c">Xanatos</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_d" name="q16">
+                    <label for="q16_d">Elisa</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. Erkek gargoyle’ların gözleri öfkelendiklerinde ne renk parlar?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_a" name="q17">
+                    <label for="q17_a">Kırmızı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_b" name="q17" value="dogru">
+                    <label for="q17_b">Beyaz</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_c" name="q17">
+                    <label for="q17_c">Yeşil</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_d" name="q17">
+                    <label for="q17_d">Mavi</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. Gargoyle’lar nasıl uçar?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_a" name="q18">
+                    <label for="q18_a">Kuş gibi kanat çırparak</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_b" name="q18" value="dogru">
+                    <label for="q18_b">Hava akımlarını kullanarak süzülerek (Gliding)</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_c" name="q18">
+                    <label for="q18_c">Büyüyle</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_d" name="q18">
+                    <label for="q18_d">Jet motoruyla</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. Dizinin yaratıcısı Greg Weisman hangi yazardan esinlenmiştir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_a" name="q19">
+                    <label for="q19_a">J.K. Rowling</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_b" name="q19" value="dogru">
+                    <label for="q19_b">William Shakespeare</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_c" name="q19">
+                    <label for="q19_c">Stephen King</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_d" name="q19">
+                    <label for="q19_d">George R.R. Martin</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. Demona gündüzleri taşa dönüşmek yerine neye dönüşür?</h3>
+            
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_a" name="q20">
+                    <label for="q20_a">Bir kediye</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_b" name="q20" value="dogru">
+                    <label for="q20_b">İnsan bir kadına</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_c" name="q20">
+                    <label for="q20_c">Görünmez olur</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_d" name="q20">
+                    <label for="q20_d">Toza</label>
+                </div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 SONUÇ EKRANI</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+            <button onclick="window.location.reload();" class="btn-kapsul" style="background:#8e44ad; color:white; cursor:pointer; margin-top:20px;">Tekrar Çöz</button>
+        </div>
+
+    </div> 
+
+    
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+
+
+    <script>
+        function testiBitir() {
+            let dogru=0, yanlis=0, bos=0; const puan=5;
+            document.querySelectorAll('form').forEach(f=>{
+                const s = f.querySelector('input:checked');
+                f.querySelectorAll('label').forEach(l=>{l.style.color="#ddd";l.style.fontWeight="normal"});
+                if(s){
+                    if(s.value==="dogru"){
+                        dogru++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#2ecc71"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ✅";
+                    } else {
+                        yanlis++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#e74c3c"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ❌"; 
+                        const d=f.querySelector('input[value="dogru"]'); 
+                        if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#2ecc71";
+                    }
+                } else {
+                    bos++; 
+                    const d=f.querySelector('input[value="dogru"]'); 
+                    if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#f1c40f";
+                }
+            });
+
+            const tPuan = dogru*puan;
+            document.getElementById("sonuc-kutusu").style.display="block";
+            document.getElementById("puan-yazisi").innerHTML=`Doğru: <b style="color:#2ecc71">${dogru}</b> | Yanlış: <b style="color:#e74c3c">${yanlis}</b> | Boş: <b style="color:#f1c40f">${bos}</b>`;
+            document.getElementById("toplam-puan-yazisi").innerHTML=`PUAN: ${tPuan}`;
+            
+            let msg=""; 
+            if(tPuan===100) msg="MÜKEMMEL! Sen bir Gargoyle savaşçısısın! Gecenin koruyucusu! 🦇"; 
+            else if(tPuan>=80) msg="Harika! Goliath seni klanına kabul etti."; 
+            else if(tPuan>=50) msg="Fena değil, ama güneş doğmadan kaçmalısın. 😊"; 
+            else msg="Xanatos seni taşa çevirdi! Baştan izle. 📺";
+            
+            document.getElementById("mesaj").innerHTML=msg; 
+            document.getElementById("mesaj").style.color="#9b59b6";
+            document.getElementById("sonuc-kutusu").scrollIntoView({behavior:'smooth'});
+        }
+        function acKapaMenu(){
+            var m=document.getElementById("yanMenu"); 
+            if(m.style.width==="300px") m.style.width="0"; else m.style.width="300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

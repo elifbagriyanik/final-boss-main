@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakugan Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script> 
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+
+    <div class="test-kapsayici">
+
+        <h1><strong>🔴 Bakugan Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Bakugan Savaş (Brawl)!" Kartlarını hazırla ve Vestroia'yı kurtar!</p>
+
+        <h3>1. Serinin ana karakteri olan ve Pyrus (Ateş) elementi kullanan savaşçı kimdir?</h3>as
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"> <label for="q1_a">Shun Kazami</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"> <label for="q1_b">Dan Kuso</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"> <label for="q1_c">Marucho Marukura</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"> <label for="q1_d">Masquerade</label></div>
+        </form>
+
+        <h3>2. Dan Kuso'nun ortağı olan efsanevi ejderha Bakugan'ın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"> <label for="q2_a">Hydranoid</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2"> <label for="q2_b">Tigrerra</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2" value="dogru"> <label for="q2_c">Drago (Dragonoid)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"> <label for="q2_d">Skyress</label></div>
+        </form>
+
+        <h3>3. Bakugan savaşını başlatmak için oyuncuların yere attığı kartın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"> <label for="q3_a">Yetenek Kartı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3" value="dogru"> <label for="q3_b">Geçit Kartı (Gate Card)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"> <label for="q3_c">Karakter Kartı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"> <label for="q3_d">Doom Kartı</label></div>
+        </form>
+
+        <h3>4. Shun Kazami'nin kullandığı rüzgar elementi hangisidir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"> <label for="q4_a">Pyrus</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4"> <label for="q4_b">Aquos</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4" value="dogru"> <label for="q4_c">Ventus</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"> <label for="q4_d">Subterra</label></div>
+        </form>
+
+        <h3>5. İlk sezonda gizemli bir şekilde ortaya çıkan, maskeli kötü karakter kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"> <label for="q5_a">Spectra</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"> <label for="q5_b">Masquerade</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"> <label for="q5_c">Naga</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"> <label for="q5_d">Hal-G</label></div>
+        </form>
+
+        <h3>6. Runo Misaki'nin ortağı olan ve konuşabilen kaplan Bakugan'ın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6" value="dogru"> <label for="q6_a">Tigrerra</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6"> <label for="q6_b">Gorem</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"> <label for="q6_c">Preyas</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"> <label for="q6_d">Elfin</label></div>
+        </form>
+
+        <h3>7. Bakuganların ana vatanı olan boyutun adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"> <label for="q7_a">Gundalia</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7"> <label for="q7_b">Neathia</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7" value="dogru"> <label for="q7_c">Vestroia</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"> <label for="q7_d">Doom Boyutu</label></div>
+        </form>
+
+        <h3>8. Marucho'nun Bakugan'ı Preyas'ın en belirgin ve özel yeteneği nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8"> <label for="q8_a">Görünmez olması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8" value="dogru"> <label for="q8_b">Element değiştirebilmesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"> <label for="q8_c">İki kafalı olması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"> <label for="q8_d">Uçabilmesi</label></div>
+        </form>
+
+        <h3>9. Masquerade'in kullandığı, yenilen Bakuganları sonsuzluğa hapseden kartın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9" value="dogru"> <label for="q9_a">Doom Kartı (Kader Kartı)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9"> <label for="q9_b">Joker Kartı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"> <label for="q9_c">Karanlık Kart</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"> <label for="q9_d">Sessizlik Kartı</label></div>
+        </form>
+
+        <h3>10. Julie Makimoto'nun kullandığı toprak elementi (Subterra) Bakugan'ı kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"> <label for="q10_a">Cycloid</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10" value="dogru"> <label for="q10_b">Gorem</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"> <label for="q10_c">Wormquake</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"> <label for="q10_d">Vulcan</label></div>
+        </form>
+
+        <h3>11. Aslında Masquerade olduğu ortaya çıkan, takımın nazik üyesi kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"> <label for="q11_a">Runo</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"> <label for="q11_b">Julie</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11" value="dogru"> <label for="q11_c">Alice Gehabich</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"> <label for="q11_d">Mira</label></div>
+        </form>
+
+        <h3>12. Vestroia'nın dengesini bozan ve 'Sessizlik Çekirdeği'ni (Silent Core) çalmaya çalışan kötü Bakugan kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12"> <label for="q12_a">Dharak</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12" value="dogru"> <label for="q12_b">Naga</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"> <label for="q12_c">Helios</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"> <label for="q12_d">Hydranoid</label></div>
+        </form>
+
+        <h3>13. Masquerade'in kullandığı ve sürekli evrim geçiren çok başlı karanlık Bakugan kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13"> <label for="q13_a">Reaper</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"> <label for="q13_b">Laserman</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13" value="dogru"> <label for="q13_c">Hydranoid</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"> <label for="q13_d">Wavern</label></div>
+        </form>
+
+        <h3>14. Drago'nun evrim geçirerek ulaştığı, göğsünde elmas bulunan nihai form (Sezon 1 sonu) nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"> <label for="q14_a">Delta Dragonoid</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"> <label for="q14_b">Infinity Dragonoid (Sonsuzluk)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"> <label for="q14_c">Ultimate Dragonoid</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"> <label for="q14_d">Neo Dragonoid</label></div>
+        </form>
+
+        <h3>15. Dan ve arkadaşlarının oluşturduğu grubun adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"> <label for="q15_a">Bakugan Savaşçıları (Battle Brawlers)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"> <label for="q15_b">Vexos</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"> <label for="q15_c">Kale Şövalyeleri</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"> <label for="q15_d">Element Ustaları</label></div>
+        </form>
+
+        <h3>16. Shun'un ilk ortağı olan ve anka kuşuna benzeyen Bakugan kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16"> <label for="q16_a">Ingram</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16" value="dogru"> <label for="q16_b">Skyress</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"> <label for="q16_c">Taylean</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"> <label for="q16_d">Harpus</label></div>
+        </form>
+
+        <h3>17. New Vestroia serisinde Dan'in en büyük rakibi olan, kırmızı maskeli karakter kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17" value="dogru"> <label for="q17_a">Spectra Phantom</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17"> <label for="q17_b">Gus Grav</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"> <label for="q17_c">Shadow Prove</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"> <label for="q17_d">Mylene</label></div>
+        </form>
+
+        <h3>18. Spectra Phantom'un kullandığı sibernetik/mekanik Bakugan'ın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"> <label for="q18_a">Cyborg Drago</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18" value="dogru"> <label for="q18_b">Helios</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"> <label for="q18_c">Hades</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"> <label for="q18_d">Altair</label></div>
+        </form>
+
+        <h3>19. Bakuganları savaşa çağırmak için söylenen klasik söz nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"> <label for="q19_a">Saldır Bakugan!</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19" value="dogru"> <label for="q19_b">Bakugan Savaş (Brawl)!</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"> <label for="q19_c">Geçit Açıl!</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"> <label for="q19_d">Drago Ateşle!</label></div>
+        </form>
+
+        <h3>20. Naga'nın ikiz kardeşi olan ve 'Sonsuzluk Çekirdeği'ni (Infinity Core) koruyan beyaz Bakugan kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20" value="dogru"> <label for="q20_a">Wavern</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20"> <label for="q20_b">Tigrerra</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20"> <label for="q20_c">Sirenoid</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"> <label for="q20_d">Elfin</label></div>
+        </form>
+
+        <hr style="border-color: #444; margin-top: 40px;">
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 Test Sonucunuz</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+        </div>
+
+    </div> 
+
+    <script>
+        function testiBitir() {
+            let dogruSayisi = 0;
+            let yanlisSayisi = 0;
+            let bosSayisi = 0;
+            const soruPuani = 5; // Toplam 20 soru var (20x5 = 100)
+            
+            const sorular = document.querySelectorAll('form'); 
+            
+            sorular.forEach((form) => {
+                const secilen = form.querySelector('input[type="radio"]:checked');
+                
+                const etiketler = form.querySelectorAll('label');
+                etiketler.forEach(lbl => {
+                    lbl.style.color = "#ecf0f1"; 
+                    lbl.style.fontWeight = "normal";
+                });
+
+                if (secilen) {
+                    if (secilen.value === "dogru") {
+                        dogruSayisi++;
+                        const label = form.querySelector(`label[for="${secilen.id}"]`);
+                        label.style.color = "#2ecc71"; // Yeşil
+                        label.style.fontWeight = "bold";
+                        label.innerHTML += " ✅"; 
+                    } else {
+                        yanlisSayisi++;
+                        const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                        yanlisLabel.style.color = "#e74c3c"; // Kırmızı
+                        yanlisLabel.style.fontWeight = "bold";
+                        yanlisLabel.innerHTML += " ❌"; 
+
+                        const dogruInput = form.querySelector('input[value="dogru"]');
+                        if(dogruInput) {
+                            const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                            dogruLabel.style.color = "#2ecc71";
+                            dogruLabel.style.fontWeight = "bold";
+                            dogruLabel.innerHTML += " (Doğru Cevap)";
+                        }
+                    }
+                } else {
+                    bosSayisi++;
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#f39c12"; // Turuncu
+                        dogruLabel.innerHTML += " (Boş Bıraktın)";
+                    }
+                }
+            });
+
+            const toplamPuan = dogruSayisi * soruPuani;
+            const sonucKutusu = document.getElementById("sonuc-kutusu");
+            const puanYazisi = document.getElementById("puan-yazisi");
+            const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+            const mesaj = document.getElementById("mesaj");
+
+            sonucKutusu.style.display = "block";
+            
+            puanYazisi.innerHTML = `
+                Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+                Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+                Boş Sayısı: <strong>${bosSayisi}</strong>
+            `;
+
+            toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+            if (toplamPuan === 100) {
+                mesaj.innerHTML = "TEBRİKLER! Sen 1 Numaralı Bakugan Savaşçısısın! 🔴🏆";
+                mesaj.style.color = "#2ecc71";
+            } else if (toplamPuan >= 80) {
+                mesaj.innerHTML = "Harika! Vestroia'nın kurtarıcısı olabilirsin! 👏";
+                mesaj.style.color = "#3498db";
+            } else if (toplamPuan >= 50) {
+                mesaj.innerHTML = "Fena değil, ama biraz daha kart stratejisi çalışmalısın. 😊";
+                mesaj.style.color = "#f39c12";
+            } else {
+                mesaj.innerHTML = "Doom Boyutu'na gönderildin! Tekrar dene! 📺";
+                mesaj.style.color = "#e74c3c";
+            }
+
+            sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function acKapaMenu() {
+            var menu = document.getElementById("yanMenu");
+            if (menu.style.width === "250px") { menu.style.width = "0"; } 
+            else { menu.style.width = "250px"; }
+        }
+    </script>
+
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+</html>
+
+
+
+
+
+

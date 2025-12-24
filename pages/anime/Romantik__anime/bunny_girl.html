@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Girl Senpai Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script> 
+
+     <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+    <div class="test-kapsayici">
+
+        <h1><strong>🐰 Bunny Girl Senpai Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Seni tüm dünyadan daha çok seviyorum." Ergenlik Sendromu'nu çözmeye hazır mısın?</p>
+
+        <h3>1. Serinin ana karakteri Sakuta Azusagawa, Mai Sakurajima'yı kütüphanede ilk gördüğünde Mai ne giyiyordu?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"> <label for="q1_a">Okul Üniforması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1"> <label for="q1_b">Mayo</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1" value="dogru"> <label for="q1_c">Tavşan Kız (Bunny Girl) Kostümü</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"> <label for="q1_d">Hemşire Kıyafeti</label></div>
+        </form>
+
+        <h3>2. Hikayedeki karakterlerin yaşadığı gizemli olaylara verilen genel ad nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2" value="dogru"> <label for="q2_a">Ergenlik Sendromu (Adolescence Syndrome)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2"> <label for="q2_b">Gençlik Hastalığı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"> <label for="q2_c">Kuantum Çöküşü</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"> <label for="q2_d">Hayalet Sendromu</label></div>
+        </form>
+
+        <h3>3. Bilim Kulübü üyesi olan ve olayları genellikle Kuantum Fiziği ile açıklayan karakter kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"> <label for="q3_a">Tomoe Koga</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3" value="dogru"> <label for="q3_b">Rio Futaba</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"> <label for="q3_c">Shoko Makinohara</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"> <label for="q3_d">Nodoka Toyohama</label></div>
+        </form>
+
+        <h3>4. Mai Sakurajima'nın yaşadığı sendromun (görünmezlik) temel sebebi neydi?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"> <label for="q4_a">Bir hayalet olması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4" value="dogru"> <label for="q4_b">Atmosferi okuyarak kendini soyutlaması ve insanların onu görmezden gelmesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"> <label for="q4_c">Yanlışlıkla görünmezlik iksiri içmesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"> <label for="q4_d">Ölmüş olması</label></div>
+        </form>
+
+        <h3>5. Sakuta'nın göğsündeki büyük yara izlerinin sebebi nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"> <label for="q5_a">Trafik kazası</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"> <label for="q5_b">Kardeşi Kaede'nin acısını paylaşırken oluşan fiziksel yansıma</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"> <label for="q5_c">Bir kavgada bıçaklanması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"> <label for="q5_d">Doğuştan gelen bir iz</label></div>
+        </form>
+
+        <h3>6. Tomoe Koga'nın (Şeytanın Laplace'ı) sendromu neye sebep olmuştur?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6" value="dogru"> <label for="q6_a">Aynı günün defalarca tekrar etmesine (Zaman Döngüsü)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6"> <label for="q6_b">Herkesin zihnini okumasına</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"> <label for="q6_c">Görünmez olmasına</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"> <label for="q6_d">Işınlanmasına</label></div>
+        </form>
+
+        <h3>7. Sakuta'nın tüm okula Mai'ye olan aşkını itiraf etme yöntemi neydi?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"> <label for="q7_a">Okul hoparlöründen şarkı söylemek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7" value="dogru"> <label for="q7_b">Okul bahçesinin ortasında var gücüyle bağırmak</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"> <label for="q7_c">Müdürün odasını basmak</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"> <label for="q7_d">Pankart açmak</label></div>
+        </form>
+
+        <h3>8. Rio Futaba'nın sendromu sonucu başına gelen olay nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8"> <label for="q8_a">Hafızasını kaybetti</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8" value="dogru"> <label for="q8_b">İki farklı Rio'ya bölündü (Doppelganger)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"> <label for="q8_c">Görünmez oldu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"> <label for="q8_d">Çocukluğuna döndü</label></div>
+        </form>
+
+        <h3>9. Mai Sakurajima'nın asıl mesleği nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"> <label for="q9_a">Şarkıcı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9" value="dogru"> <label for="q9_b">Model ve Oyuncu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"> <label for="q9_c">Ressam</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"> <label for="q9_d">Yazar</label></div>
+        </form>
+
+        <h3>10. Sakuta'nın kız kardeşi Kaede'nin evden çıkamamasının ve vücudunda yaralar oluşmasının sebebi nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10" value="dogru"> <label for="q10_a">Sosyal medyada maruz kaldığı siber zorbalık</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10"> <label for="q10_b">Geçirdiği bir kaza</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"> <label for="q10_c">Doğuştan gelen bir hastalık</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"> <label for="q10_d">Sakuta'yı kıskanması</label></div>
+        </form>
+
+        <h3>11. Mai'nin üvey kardeşi Nodoka Toyohama ile yaşadığı sendrom nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11" value="dogru"> <label for="q11_a">Beden değiştirmek (Body Swap)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"> <label for="q11_b">Zihin okumak</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11"> <label for="q11_c">Geleceği görmek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"> <label for="q11_d">Aynı rüyayı görmek</label></div>
+        </form>
+
+        <h3>12. Sakuta'nın ilk aşkı olan gizemli karakter kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12"> <label for="q12_a">Mai Sakurajima</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12"> <label for="q12_b">Rio Futaba</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12" value="dogru"> <label for="q12_c">Shoko Makinohara</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"> <label for="q12_d">Kaede Azusagawa</label></div>
+        </form>
+
+        <h3>13. Kaede'nin hafızası geri geldiğinde (anime finalinde) ne oldu?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13" value="dogru"> <label for="q13_a">Son iki yılda (Kaede-chan olarak) yaşadığı her şeyi unuttu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"> <label for="q13_b">Tüm anıları birleşti</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"> <label for="q13_c">Sakuta'yı unuttu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"> <label for="q13_d">Konuşma yetisini kaybetti</label></div>
+        </form>
+
+        <h3>14. Hikaye Japonya'nın hangi sahil bölgesinde geçmektedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"> <label for="q14_a">Okinawa</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"> <label for="q14_b">Enoshima / Fujisawa</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"> <label for="q14_c">Hokkaido</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"> <label for="q14_d">Kyoto</label></div>
+        </form>
+
+        <h3>15. Rio Futaba, sendromları açıklarken genellikle hangi ünlü düşünce deneyine atıfta bulunur?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"> <label for="q15_a">Schrödinger'in Kedisi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"> <label for="q15_b">Pavlov'un Köpeği</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"> <label for="q15_c">Büyükbaba Paradoksu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"> <label for="q15_d">Kelebek Etkisi</label></div>
+        </form>
+
+        <h3>16. Sakuta ve Tomoe Koga neden sevgili taklidi yapmışlardır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16" value="dogru"> <label for="q16_a">Tomoe'nin arkadaşları tarafından dışlanmaması için</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16"> <label for="q16_b">Mai'yi kıskandırmak için</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"> <label for="q16_c">Sakuta iddiayı kaybettiği için</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"> <label for="q16_d">Okuldan atılmamak için</label></div>
+        </form>
+
+        <h3>17. Sakuta'nın, birbirleriyle popolarını tekmeledikleri sahnelerle bilinen 'arkadaşı' kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17"> <label for="q17_a">Kunimi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17" value="dogru"> <label for="q17_b">Tomoe Koga</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"> <label for="q17_c">Rio Futaba</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"> <label for="q17_d">Mai Sakurajima</label></div>
+        </form>
+
+        <h3>18. Shoko Makinohara'nın gizemi nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"> <label for="q18_a">Aslında bir hayalettir</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18" value="dogru"> <label for="q18_b">Hem ortaokul hem de yetişkin versiyonu aynı anda vardır</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"> <label for="q18_c">Uzaylıdır</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"> <label for="q18_d">Mai'nin gelecekteki halidir</label></div>
+        </form>
+
+        <h3>19. Sakuta'nın karakteristik özelliği nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"> <label for="q19_a">Çok utangaç olması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19" value="dogru"> <label for="q19_b">Dobra, arsız ve umursamaz konuşması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"> <label for="q19_c">Sürekli kavga etmesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"> <label for="q19_d">Çok zengin olması</label></div>
+        </form>
+
+        <h3>20. Mai, bazen Sakuta'ya kızdığında veya takıldığında ona hangi lakabı takar?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20"> <label for="q20_a">Senpai</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20"> <label for="q20_b">Aptal (Baka)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20" value="dogru"> <label for="q20_c">Rascal (Buta Yarou / Domuz Herif)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"> <label for="q20_d">Sapık</label></div>
+        </form>
+
+        <hr style="border-color: #444; margin-top: 40px;">
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 Test Sonucunuz</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+        </div>
+
+    </div> 
+
+    <script>
+        function testiBitir() {
+            let dogruSayisi = 0;
+            let yanlisSayisi = 0;
+            let bosSayisi = 0;
+            const soruPuani = 5; // Toplam 20 soru var (20x5 = 100)
+            
+            const sorular = document.querySelectorAll('form'); 
+            
+            sorular.forEach((form) => {
+                const secilen = form.querySelector('input[type="radio"]:checked');
+                
+                const etiketler = form.querySelectorAll('label');
+                etiketler.forEach(lbl => {
+                    lbl.style.color = "#ecf0f1"; 
+                    lbl.style.fontWeight = "normal";
+                });
+
+                if (secilen) {
+                    if (secilen.value === "dogru") {
+                        dogruSayisi++;
+                        const label = form.querySelector(`label[for="${secilen.id}"]`);
+                        label.style.color = "#2ecc71"; // Yeşil
+                        label.style.fontWeight = "bold";
+                        label.innerHTML += " ✅"; 
+                    } else {
+                        yanlisSayisi++;
+                        const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                        yanlisLabel.style.color = "#e74c3c"; // Kırmızı
+                        yanlisLabel.style.fontWeight = "bold";
+                        yanlisLabel.innerHTML += " ❌"; 
+
+                        const dogruInput = form.querySelector('input[value="dogru"]');
+                        if(dogruInput) {
+                            const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                            dogruLabel.style.color = "#2ecc71";
+                            dogruLabel.style.fontWeight = "bold";
+                            dogruLabel.innerHTML += " (Doğru Cevap)";
+                        }
+                    }
+                } else {
+                    bosSayisi++;
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#f39c12"; // Turuncu
+                        dogruLabel.innerHTML += " (Boş Bıraktın)";
+                    }
+                }
+            });
+
+            const toplamPuan = dogruSayisi * soruPuani;
+            const sonucKutusu = document.getElementById("sonuc-kutusu");
+            const puanYazisi = document.getElementById("puan-yazisi");
+            const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+            const mesaj = document.getElementById("mesaj");
+
+            sonucKutusu.style.display = "block";
+            
+            puanYazisi.innerHTML = `
+                Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+                Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+                Boş Sayısı: <strong>${bosSayisi}</strong>
+            `;
+
+            toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+            if (toplamPuan === 100) {
+                mesaj.innerHTML = "TEBRİKLER! Sen Kuantum Mekaniğini çözmüşsün! Mai-san seni kesinlikle severdi! 🐰🏆";
+                mesaj.style.color = "#2ecc71";
+            } else if (toplamPuan >= 80) {
+                mesaj.innerHTML = "Harika! Ergenlik Sendromu hakkında her şeyi biliyorsun. Sakuta kadar iyisin! 👏";
+                mesaj.style.color = "#3498db";
+            } else if (toplamPuan >= 50) {
+                mesaj.innerHTML = "Fena değil, ama atmosferi biraz daha iyi okumalısın. 😊";
+                mesaj.style.color = "#f39c12";
+            } else {
+                mesaj.innerHTML = "Sanırım hafızanı kaybettin! Kaede'nin günlüğünü okuyup tekrar dene! 📺";
+                mesaj.style.color = "#e74c3c";
+            }
+
+            sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function acKapaMenu() {
+            var menu = document.getElementById("yanMenu");
+            if (menu.style.width === "250px") { menu.style.width = "0"; } 
+            else { menu.style.width = "250px"; }
+        }
+    </script>
+
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+</html>
+
+
+
+
+
+

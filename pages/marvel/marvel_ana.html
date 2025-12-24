@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function () {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch (e) { }
+        })();
+    </script>
+
+      <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+    <div class="kategori-sayfasi">
+
+        <h1>🛡️ MARVEL</h1>
+        <p style="color: #ccc; margin-bottom: 30px;">Marvel evreni testleri</p>
+
+        <div class="alt-kategori-baslik">AVENGERS</div>
+        <div class="dizi-listesi">
+            <a href="../../pages/marvel/avengers.html" class="dizi-kutu">
+
+                <img src="../../assets/img/afis-resimleri/avangers.jpeg" alt="avangers poster">
+                <div class="kutu-isim">Avengers</div>
+            </a>
+        </div>
+
+        <div class="alt-kategori-baslik">KURUCU ÜÇLÜ</div>
+        <div class="dizi-listesi">
+            <a href="../../pages/marvel/kurucu_uclu.html" class="dizi-kutu">
+                <img src="../../assets/img/afis-resimleri/Avenger's Poster Design_.jpeg" alt="kurucu üçlü">
+                <div class="kutu-isim">Kurucu Üçlü</div>
+            </a>
+        </div>
+
+        <div class="alt-kategori-baslik">SPIDERMEN</div>
+        <div class="dizi-listesi">
+            <a href="../../pages/marvel/spider_man.html" class="dizi-kutu">
+                <img src="../../assets/img/afis-resimleri/The Amazing Spider-Man.jpeg" alt="spider_man">
+                <div class="kutu-isim">Spider-Man</div>
+            </a>
+        </div>
+
+        <div class="alt-kategori-baslik">X MAN DEADPOOL</div>
+        <div class="dizi-listesi">
+            <a href="../../pages/marvel/x_man_ve_deadpool.html" class="dizi-kutu">
+                <img src="../../assets/img/afis-resimleri/DAREDEVIL ___ DEADPOOL.jpeg" alt="Deadpool">
+                <div class="kutu-isim">X-Men ve Deadpool </div>
+            </a>
+        </div>
+
+        <div class="alt-kategori-baslik">YENİ NESİL</div>
+        <div class="dizi-listesi">
+            <a href="../../pages/marvel/yeni_nesil.html" class="dizi-kutu">
+                <img src="../../assets/img/afis-resimleri/kötü adamlar.jpeg" alt="bütün karakterler">
+                <div class="kutu-isim">Yeni Nesil</div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <script>
+        function acKapaMenu() {
+            var m = document.getElementById("yanMenu");
+            if (m.style.width === "300px") m.style.width = "0"; else m.style.width = "300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                if (icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                }
+            }
+
+            window.toggleTheme = function () {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+
+</html>

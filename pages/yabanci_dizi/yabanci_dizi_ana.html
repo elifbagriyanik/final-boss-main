@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yabancı Diziler</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function () {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch (e) { }
+        })();
+    </script>
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="#" class="nav-item" style="color: #3498db;">Yabancı Diziler</a>
+            <a href="../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i
+                    class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../index.html">Ana Sayfa</a>
+        <a href="../../pages/turk-dizi/turk_dizi_ana.html">Türk Dizileri</a>
+        <a href="../../pages/cizgi_film/cizgi_film_ana.html">Çizgi Filmler</a>
+        <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../pages/anime/anıme_ana.html">Anime</a>
+        <a href="../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+
+    </div>
+
+    <div class="kategori-sayfasi">
+
+        <h1>🎬 YABANCI DİZİ DÜNYASI</h1>
+        <p style="color: #ccc; margin-bottom: 30px;">Dünyaca ünlü yapımlar burada! Favorini seç ve teste başla.</p>
+
+        <!-- FANTASTİK, BİLİM KURGU & DOĞAÜSTÜ -->
+        <div class="alt-kategori-baslik">FANTASTİK, BİLİM KURGU & DOĞAÜSTÜ</div>
+        <div class="dizi-listesi">
+            <a href="fantastik-bilimkurgu-doğaustu/black_mirror.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/black_mirror.jpg" alt="Black Mirror">
+                </div>
+                <div class="kutu-isim">Black Mirror</div>
+
+            </a>
+
+            <a href="fantastik-bilimkurgu-doğaustu/dark.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/dark.jpg" alt="Dark"></div>
+                <div class="kutu-isim">Dark</div>
+            </a>
+
+            <a href="fantastik-bilimkurgu-doğaustu/game_of_thrones.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/game_of_thrones.jpg"
+                        alt="Game of Thrones"></div>
+                <div class="kutu-isim">Game of Thrones</div>
+            </a>
+
+            <a href="fantastik-bilimkurgu-doğaustu/stranger_things.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/strandeg_things.jpg"
+                        alt="Stranger Things"></div>
+                <div class="kutu-isim">Stranger Things</div>
+            </a>
+
+            <a href="fantastik-bilimkurgu-doğaustu/supernatural.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/supernatural.jpg" alt="Supernatural">
+                </div>
+                <div class="kutu-isim">Supernatural</div>
+            </a>
+            <a href="fantastik-bilimkurgu-doğaustu/the_boys.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the_boys.jpg" alt="The Boys"></div>
+                <div class="kutu-isim">The Boys</div>
+            </a>
+            <a href="fantastik-bilimkurgu-doğaustu/the_manalorian.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the_manolarıan.jpg"
+                        alt="The Mandalorian"></div>
+                <div class="kutu-isim">The Mandalorian</div>
+            </a>
+            <a href="fantastik-bilimkurgu-doğaustu/the_walking_dead.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the_walking_dead.jpg"
+                        alt="The Walking Dead"></div>
+                <div class="kutu-isim">The Walking Dead</div>
+            </a>
+            <a href="fantastik-bilimkurgu-doğaustu/the_witcher.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the_wicther.jpg" alt="The Witcher">
+                </div>
+                <div class="kutu-isim">The Witcher</div>
+            </a>
+            <a href="fantastik-bilimkurgu-doğaustu/westword.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/westword.jpg" alt="Westworld"></div>
+                <div class="kutu-isim">Westworld</div>
+            </a>
+        </div>
+
+        <!-- GİZEM, GERİLİM & DRAM -->
+        <div class="alt-kategori-baslik">GİZEM, GERİLİM & DRAM</div>
+        <div class="dizi-listesi">
+            <a href="gizem-gerilim-dram/chernobyl.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/chernobyl.jpg" alt="Chernobyl"></div>
+                <div class="kutu-isim">Chernobyl</div>
+            </a>
+            <a href="gizem-gerilim-dram/house_md.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/house.jpg" alt="House M.D."></div>
+                <div class="kutu-isim">House M.D.</div>
+            </a>
+            <a href="gizem-gerilim-dram/lost.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/lost.jpg" alt="Lost"></div>
+                <div class="kutu-isim">Lost</div>
+            </a>
+            <a href="gizem-gerilim-dram/mr_robot.html" class="dizi-kutu">
+                <div class="kutu-gorsel"> <img src="../../assets/img/afis-resimleri/mr.robot.jpg" alt="Mr. Robot"></div>
+                <div class="kutu-isim">Mr. Robot</div>
+            </a>
+            <a href="gizem-gerilim-dram/sherlock.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/sherlock.jpg" alt="Sherlock"></div>
+                <div class="kutu-isim">Sherlock</div>
+            </a>
+            <a href="gizem-gerilim-dram/squid_game.html" class="dizi-kutu">
+                <div class="kutu-gorsel"> <img src="../../assets/img/afis-resimleri/squid game.jpg" alt="Squid Game">
+                </div>
+                <div class="kutu-isim">Squid Game</div>
+            </a>
+            <a href="gizem-gerilim-dram/vikings.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/vikings.jpg" alt="Vikings"></div>
+                <div class="kutu-isim">Vikings</div>
+            </a>
+        </div>
+
+        <!-- KOMEDİ & SITCOME -->
+        <div class="alt-kategori-baslik">KOMEDİ & SITCOME</div>
+        <div class="dizi-listesi">
+            <a href="komedi-ve-sitcome/friends.html" class="dizi-kutu">
+                <div class="kutu-gorsel"> <img src="../../assets/img/afis-resimleri/friens.jpg" alt="Friends"></div>
+                <div class="kutu-isim">Friends</div>
+            </a>
+            <a href="komedi-ve-sitcome/how_l_met_your_mother.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/how i met your.jpg"
+                        alt="How I Met Your Mother"></div>
+                <div class="kutu-isim">How I Met Your Mother</div>
+            </a>
+            <a href="komedi-ve-sitcome/rick_and_morty.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/rick.jpeg" alt="Rick and Morty">
+                </div>
+                <div class="kutu-isim">Rick and Morty</div>
+            </a>
+            <a href="komedi-ve-sitcome/the_big_bang_theory.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the big bang.jpg"
+                        alt="The Big Bang Theory"></div>
+                <div class="kutu-isim">The Big Bang Theory</div>
+            </a>
+            <a href="komedi-ve-sitcome/the_office.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the office.jpg" alt="The Office">
+                </div>
+                <div class="kutu-isim">The Office</div>
+            </a>
+        </div>
+
+        <!-- SUÇ, MAFYA & AKSİYON -->
+        <div class="alt-kategori-baslik">SUÇ, MAFYA & AKSİYON</div>
+        <div class="dizi-listesi">
+            <a href="suç_mafya_aksiyon/better_call_saul.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/better.jpg" alt="Better Call Saul">
+                </div>
+                <div class="kutu-isim">Better Call Saul</div>
+            </a>
+            <a href="suç_mafya_aksiyon/breaking_bad.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/breaking bad.jpg" alt="Breaking Bad">
+                </div>
+                <div class="kutu-isim">Breaking Bad</div>
+            </a>
+            <a href="suç_mafya_aksiyon/dexter.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/dexter.jpg" alt="Dexter"></div>
+                <div class="kutu-isim">Dexter</div>
+            </a>
+            <a href="suç_mafya_aksiyon/la-casa-de-papel.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/la casede papel.jpg"
+                        alt="La Casa De Papel"></div>
+                <div class="kutu-isim">La Casa De Papel</div>
+            </a>
+            <a href="suç_mafya_aksiyon/peaky_blinders.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/peaky blinders.jpg"
+                        alt="Peaky Blinders"></div>
+                <div class="kutu-isim">Peaky Blinders</div>
+            </a>
+            <a href="suç_mafya_aksiyon/prison_break.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/prison break.jpg" alt="Prison Break">
+                </div>
+                <div class="kutu-isim">Prison Break</div>
+            </a>
+            <a href="suç_mafya_aksiyon/the_sopranos.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/the soprasons.jpg"
+                        alt="The Sopranos"></div>
+                <div class="kutu-isim">The Sopranos</div>
+            </a>
+            <a href="suç_mafya_aksiyon/true_dedective.html" class="dizi-kutu">
+                <div class="kutu-gorsel"><img src="../../assets/img/afis-resimleri/true detective.jpg"
+                        alt="True Detective"></div>
+                <div class="kutu-isim">True Detective</div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- DYNAMIC FOOTER START -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        footer {
+            background-color: var(--footer-bg);
+            color: var(--text-color);
+            padding: 10px 0;
+            font-family: 'Segoe UI', sans-serif;
+            border-top: 2px solid var(--accent-color);
+            font-size: 11px;
+        }
+
+        .footer-icerik {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 5px;
+            padding: 0 10px;
+        }
+
+        .footer-blok {
+            flex: 1;
+            min-width: 180px;
+            background: var(--footer-block-bg);
+            padding: 5px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .footer-blok h3 {
+            color: var(--highlight-color);
+            margin: 0 0 5px 0;
+            font-size: 12px;
+            text-transform: uppercase;
+            display: block;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .yatay-dizilis {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .iletisim-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: 0.2s;
+            gap: 3px;
+        }
+
+        .iletisim-link:hover {
+            color: var(--text-color);
+        }
+
+        .renkli-ikon {
+            width: 22px;
+            height: 22px;
+            background: var(--surface-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .renkli-ikon:hover {
+            transform: scale(1.1);
+        }
+
+        .fa-instagram {
+            color: #E1306C;
+        }
+
+        .fa-whatsapp {
+            color: #25D366;
+        }
+
+        .fa-x-twitter {
+            color: var(--text-color);
+        }
+
+        .fa-youtube {
+            color: #FF0000;
+        }
+
+        .telif-mini {
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 5px;
+            padding-top: 5px;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+    <footer>
+        <div class="footer-icerik">
+            <div class="footer-blok">
+                <h3>Hızlı Erişim</h3>
+                <div class="yatay-dizilis">
+                    <a href="../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                    <a href="../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                    <a href="../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                    <a href="../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+                </div>
+            </div>
+            <div class="footer-blok">
+                <h3>ELİF</h3>
+                <div class="yatay-dizilis">
+                    <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i
+                            class="fa-solid fa-envelope"></i> Mail</a>
+                    <a href="https://wa.me/905551111111" target="_blank" class="iletisim-link"><i
+                            class="fa-brands fa-whatsapp"></i> WP</a>
+                    <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank"
+                        class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-blok">
+                <h3>TAYLAN</h3>
+                <div class="yatay-dizilis">
+                    <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i
+                            class="fa-solid fa-envelope"></i> Mail</a>
+                    <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i
+                            class="fa-brands fa-whatsapp"></i> WP</a>
+                    <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank"
+                        class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="telif-mini">
+            &copy; 2025 Test Dünyası
+        </div>
+    </footer>
+    <!-- DYNAMIC FOOTER END -->
+
+    <script>
+        function acKapaMenu() {
+            var m = document.getElementById("yanMenu");
+            if (m.style.width === "300px") m.style.width = "0"; else m.style.width = "300px";
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return;
+            const icon = themeBtn.querySelector("i");
+            if (body.classList.contains("light-mode")) {
+                if (icon) { icon.classList.remove("fa-sun"); icon.classList.add("fa-moon"); }
+            }
+            window.toggleTheme = function () {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                if (icon) {
+                    if (isLight) { icon.classList.remove("fa-sun"); icon.classList.add("fa-moon"); localStorage.setItem("theme", "light"); }
+                    else { icon.classList.remove("fa-moon"); icon.classList.add("fa-sun"); localStorage.setItem("theme", "dark"); }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

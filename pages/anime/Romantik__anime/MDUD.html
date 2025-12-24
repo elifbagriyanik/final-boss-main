@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dress-Up Darling Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script> 
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+    
+    <div class="test-kapsayici">
+
+        <h1><strong>🧵 My Dress-Up Darling Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Cosplay Aşkına!" Bakalım Gojo-kun kadar yetenekli, Marin kadar tutkulu musun?</p>
+
+        <h3>1. Ana karakter Wakana Gojo'nun ailesinden gelen ve ustalaşmaya çalıştığı geleneksel zanaat nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"> <label for="q1_a">Çömlekçilik</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"> <label for="q1_b">Hina Bebekleri (Hina Dolls)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"> <label for="q1_c">Origami</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"> <label for="q1_d">Kimono Dikimi</label></div>
+        </form>
+
+        <h3>2. Marin Kitagawa'nın Wakana'dan yapmasını istediği İLK cosplay karakteri kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"> <label for="q2_a">Black Lobelia</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2"> <label for="q2_b">Rizu-kyun</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2" value="dogru"> <label for="q2_c">Shizuku Kuroe (Shizuku-tan)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"> <label for="q2_d">Veronica</label></div>
+        </form>
+
+        <h3>3. Wakana Gojo'nun çocukken travma yaşamasına ve içine kapanmasına sebep olan olay nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"> <label for="q3_a">Dikiş makinesini kırması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3" value="dogru"> <label for="q3_b">Çocukluk arkadaşı bir kızın ona 'iğrençsin' demesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"> <label for="q3_c">Dedesinin ona kızması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"> <label for="q3_d">Okulda kavga etmesi</label></div>
+        </form>
+
+        <h3>4. Marin'in ilk cosplay'i olan Shizuku-tan, hangi tür bir oyundan gelmektedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"> <label for="q4_a">Çocuk Oyunu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4"> <label for="q4_b">Korku Oyunu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4" value="dogru"> <label for="q4_c">Yetişkin Oyunu (Eroge)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"> <label for="q4_d">Yarış Oyunu</label></div>
+        </form>
+
+        <h3>5. 'Juju' takma adıyla bilinen ve Marin'in hayran olduğu popüler cosplayer kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5" value="dogru"> <label for="q5_a">Sajuna Inui</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5"> <label for="q5_b">Shinju Inui</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"> <label for="q5_c">Nowa Sugaya</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"> <label for="q5_d">Chitose</label></div>
+        </form>
+
+        <h3>6. Juju'nun kardeşi olan Shinju Inui'nin cosplay dünyasındaki gizli rolü nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6"> <label for="q6_a">Kostüm dikmek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6" value="dogru"> <label for="q6_b">Fotoğrafçılık yapmak</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"> <label for="q6_c">Makyaj yapmak</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"> <label for="q6_d">Senaryo yazmak</label></div>
+        </form>
+
+        <h3>7. Marin ve Juju'nun 'Flower Princess Blaze!' serisinden yaptıkları ortak cosplay karakterleri kimlerdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"> <label for="q7_a">Shizuku ve Rizu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7" value="dogru"> <label for="q7_b">Black Lobelia ve Shion</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"> <label for="q7_c">Veronica ve Neon</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"> <label for="q7_d">Black Lobelia ve Rizu</label></div>
+        </form>
+
+        <h3>8. Wakana Gojo, Marin'in 'Rizu-kyun' cosplay'i çekimlerini nerede yapmak zorunda kalmıştır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8"> <label for="q8_a">Okulun çatısında</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"> <label for="q8_b">Terk edilmiş bir hastanede</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8" value="dogru"> <label for="q8_c">Bir Love Oteli'nde</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"> <label for="q8_d">Dedesinin dükkanında</label></div>
+        </form>
+
+        <h3>9. Marin Kitagawa okul dışında para kazanmak için ne iş yapmaktadır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"> <label for="q9_a">Garsonluk</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9" value="dogru"> <label for="q9_b">Amatör Modellik</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"> <label for="q9_c">Seslendirme Sanatçılığı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"> <label for="q9_d">Kasiyerlik</label></div>
+        </form>
+
+        <h3>10. Gojo'nun, Marin'in Shizuku cosplay'ini yetiştirmek için (sınav haftasında) uykusuz kalarak dikiş dikmesinin sebebi neydi?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"> <label for="q10_a">Marin'in ona para teklif etmesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10" value="dogru"> <label for="q10_b">Etkinliğin 2 hafta sonra olduğunu yanlış anlaması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"> <label for="q10_c">Öğretmenin ödev vermesi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"> <label for="q10_d">Kumaşın bozulacak olması</label></div>
+        </form>
+
+        <h3>11. Shinju Inui (Juju'nun kardeşi), ablasından gizli olarak ilk kez hangi karakterin cosplayini yapmıştır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11" value="dogru"> <label for="q11_a">Bir erkek karakterin (Soma-kun)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"> <label for="q11_b">Bir prensesin</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11"> <label for="q11_c">Shizuku-tan</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"> <label for="q11_d">Bir kedinin</label></div>
+        </form>
+
+        <h3>12. Wakana Gojo, makyaj yapma konusundaki yeteneğini ilk başta neye borçludur?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12"> <label for="q12_a">Youtube videolarına</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12" value="dogru"> <label for="q12_b">Hina bebeklerinin yüzlerini boyamasına</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"> <label for="q12_c">Annesinin kuaför olmasına</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"> <label for="q12_d">Resim kursuna gitmesine</label></div>
+        </form>
+
+        <h3>13. Sezon finalinde, Yaz Festivali'nden dönerken Marin, uyuyakaldığını sandığı Gojo'ya ne demiştir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13"> <label for="q13_a">Kostüm çok güzeldi.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13" value="dogru"> <label for="q13_b">Seni seviyorum, Gojo-kun.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"> <label for="q13_c">Yarın okul var.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"> <label for="q13_d">Acıktım.</label></div>
+        </form>
+
+        <h3>14. Marin'in 'Veronica' cosplay'i için Gojo'nun hazırlaması gereken en zorlu aksesuar neydi?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"> <label for="q14_a">Devasa bir kılıç</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"> <label for="q14_b">Sahte köpek dişleri</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"> <label for="q14_c">Mekanik kanatlar</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"> <label for="q14_d">Işıklı ayakkabılar</label></div>
+        </form>
+
+        <h3>15. Gojo'nun dedesi (Kaoru), evde Marin'i (Shizuku kostümüyle değil, kendi iç çamaşırlarıyla) ilk gördüğünde ne olmuştur?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15"> <label for="q15_a">Onu hırsız sanıp kovalamıştır</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15" value="dogru"> <label for="q15_b">Şoktan belini incitmiştir</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"> <label for="q15_c">Onu müşterisi sanmıştır</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"> <label for="q15_d">Gojo'yu tebrik etmiştir</label></div>
+        </form>
+
+        <hr style="border-color: #444; margin-top: 40px;">
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 Test Sonucunuz</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+        </div>
+
+    </div> 
+
+    <script>
+        function testiBitir() {
+            let dogruSayisi = 0;
+            let yanlisSayisi = 0;
+            let bosSayisi = 0;
+            const soruPuani = 7; // Toplam 15 soru var (15x7 = 105 puan max)
+            
+            const sorular = document.querySelectorAll('form'); 
+            
+            sorular.forEach((form) => {
+                const secilen = form.querySelector('input[type="radio"]:checked');
+                
+                const etiketler = form.querySelectorAll('label');
+                etiketler.forEach(lbl => {
+                    lbl.style.color = "#ecf0f1"; 
+                    lbl.style.fontWeight = "normal";
+                });
+
+                if (secilen) {
+                    if (secilen.value === "dogru") {
+                        dogruSayisi++;
+                        const label = form.querySelector(`label[for="${secilen.id}"]`);
+                        label.style.color = "#2ecc71"; // Yeşil
+                        label.style.fontWeight = "bold";
+                        label.innerHTML += " ✅"; 
+                    } else {
+                        yanlisSayisi++;
+                        const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                        yanlisLabel.style.color = "#e74c3c"; // Kırmızı
+                        yanlisLabel.style.fontWeight = "bold";
+                        yanlisLabel.innerHTML += " ❌"; 
+
+                        const dogruInput = form.querySelector('input[value="dogru"]');
+                        if(dogruInput) {
+                            const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                            dogruLabel.style.color = "#2ecc71";
+                            dogruLabel.style.fontWeight = "bold";
+                            dogruLabel.innerHTML += " (Doğru Cevap)";
+                        }
+                    }
+                } else {
+                    bosSayisi++;
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#f39c12"; // Turuncu
+                        dogruLabel.innerHTML += " (Boş Bıraktın)";
+                    }
+                }
+            });
+
+            const toplamPuan = dogruSayisi * soruPuani;
+            const sonucKutusu = document.getElementById("sonuc-kutusu");
+            const puanYazisi = document.getElementById("puan-yazisi");
+            const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+            const mesaj = document.getElementById("mesaj");
+
+            sonucKutusu.style.display = "block";
+            
+            puanYazisi.innerHTML = `
+                Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+                Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+                Boş Sayısı: <strong>${bosSayisi}</strong>
+            `;
+
+            toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+            if (toplamPuan >= 95) {
+                mesaj.innerHTML = "TEBRİKLER! Sen mükemmel bir Cosplay Sanatçısısın! Marin seni partneri yapardı! 🧵🏆";
+                mesaj.style.color = "#2ecc71";
+            } else if (toplamPuan >= 70) {
+                mesaj.innerHTML = "Harika! Gojo-kun kadar detaylara hakimsin! 👏";
+                mesaj.style.color = "#3498db";
+            } else if (toplamPuan >= 40) {
+                mesaj.innerHTML = "Fena değil, ama Hina Bebekleri üzerinde biraz daha çalışmalısın. 😊";
+                mesaj.style.color = "#f39c12";
+            } else {
+                mesaj.innerHTML = "Maalesef! Kumaş yetmedi! Tekrar izlemelisin! 📺";
+                mesaj.style.color = "#e74c3c";
+            }
+
+            sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function acKapaMenu() {
+            var menu = document.getElementById("yanMenu");
+            if (menu.style.width === "250px") { menu.style.width = "0"; } 
+            else { menu.style.width = "250px"; }
+        }
+    </script>
+
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+</html>
+
+
+
+
+
+

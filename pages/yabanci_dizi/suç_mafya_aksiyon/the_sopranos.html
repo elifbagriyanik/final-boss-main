@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sopranos Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script>
+
+     <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+
+    <div class="test-kapsayici">
+        
+        <h1><strong>🚬 The Sopranos Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Woke Up This Morning..." Bakalım Tony Soprano'nun ailesine girebilecek misin?</p>
+
+        <div class="soru-karti">
+            <h3>1. Tony Soprano'nun terapi gördüğü psikiyatristin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1" value="dogru"><label for="q1_a">Dr. Jennifer Melfi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1"><label for="q1_b">Dr. Phil McGraw</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"><label for="q1_c">Dr. Frasier Crane</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"><label for="q1_d">Dr. Hannibal Lecter</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. Tony Soprano'nun New Jersey'deki evinin havuzuna gelen ve onun için sembolik önemi olan hayvanlar nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"><label for="q2_a">Köpekbalıkları</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2" value="dogru"><label for="q2_b">Ördekler</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"><label for="q2_c">Kuğular</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"><label for="q2_d">Balıklar</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. Tony Soprano'nun işlettiği striptiz kulübünün adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3" value="dogru"><label for="q3_a">Bada Bing!</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3"><label for="q3_b">Crazy Horse</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"><label for="q3_c">The Satin Dolls</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"><label for="q3_d">Lollipop Club</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. Tony'nin karısı Carmela Soprano'nun en yakın olduğu rahip kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4" value="dogru"><label for="q4_a">Peder Phil Intintola</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4"><label for="q4_b">Peder John</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"><label for="q4_c">Peder Paul</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"><label for="q4_d">Peder Francis</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. Christopher Moltisanti'nin hayali hangi sektörde çalışmaktır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"><label for="q5_a">Müzik</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"><label for="q5_b">Senaryo Yazarlığı / Sinema</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"><label for="q5_c">Spor Menajerliği</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"><label for="q5_d">Restoran İşletmeciliği</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. Tony'nin annesi Livia Soprano, Tony'yi öldürtmek için kime onay vermiştir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6" value="dogru"><label for="q6_a">Junior Soprano (Corrado)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6"><label for="q6_b">Johnny Sack</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"><label for="q6_c">Phil Leotardo</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"><label for="q6_d">Richie Aprile</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. Paulie Walnuts ve Christopher'ın karda kaybolduğu meşhur bölümün adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"><label for="q7_a">Whitecaps</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7" value="dogru"><label for="q7_b">Pine Barrens</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"><label for="q7_c">College</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"><label for="q7_d">Long Term Parking</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. Tony Soprano'nun en sevdiği ve sık sık yediği şarküteri eti nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8" value="dogru"><label for="q8_a">Gabagool (Capicola)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"><label for="q8_b">Salami</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"><label for="q8_c">Prosciutto</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"><label for="q8_d">Mortadella</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. Adriana La Cerva, FBI muhbiri olduğu ortaya çıkınca kim tarafından öldürülmüştür?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"><label for="q9_a">Tony Soprano</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9"><label for="q9_b">Christopher Moltisanti</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9" value="dogru"><label for="q9_c">Silvio Dante</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"><label for="q9_d">Paulie Gualtieri</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. Tony'nin 'atık yönetimi' işinde paravan olarak kullandığı şirketin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"><label for="q10_a">Massarone Construction</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10" value="dogru"><label for="q10_b">Barone Sanitation</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"><label for="q10_c">Satriale's Pork Store</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"><label for="q10_d">Esplanade</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. Tony'nin oğlu A.J. (Anthony Jr.) lisede hangi sporu yapmıştır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"><label for="q11_a">Basketbol</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"><label for="q11_b">Beyzbol</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11" value="dogru"><label for="q11_c">Amerikan Futbolu</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"><label for="q11_d">Yüzme</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. Ralph Cifaretto'nun, Tony'nin çok sevdiği hangi atın ölümüne sebep olduğu düşünülür?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12" value="dogru"><label for="q12_a">Pie-O-My</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12"><label for="q12_b">Secretariat</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"><label for="q12_c">Seabiscuit</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"><label for="q12_d">Tony's Pride</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. Dizinin tartışmalı final sahnesinde ekran karardığında hangi şarkı çalıyordu?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13"><label for="q13_a">Woke Up This Morning</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13" value="dogru"><label for="q13_b">Don't Stop Believin'</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"><label for="q13_c">Hotel California</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"><label for="q13_d">Born to Run</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. Tony'nin sağ kolu ve consigliere'si olan, saçına çok önem veren karakter kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"><label for="q14_a">Paulie Gualtieri</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"><label for="q14_b">Silvio Dante</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"><label for="q14_c">Big Pussy Bonpensiero</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"><label for="q14_d">Furio Giunta</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Salvatore 'Big Pussy' Bonpensiero'nun FBI muhbiri olduğu nerede ortaya çıkmış ve öldürülmüştür?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"><label for="q15_a">Bir teknede</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"><label for="q15_b">Ormanda</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"><label for="q15_c">Bodrum katında</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"><label for="q15_d">Bada Bing ofisinde</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. Janice Soprano, nişanlısı Richie Aprile'ı nasıl öldürmüştür?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16"><label for="q16_a">Zehirleyerek</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16" value="dogru"><label for="q16_b">Yemek masasında vurarak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"><label for="q16_c">Uykusunda boğarak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"><label for="q16_d">Merdivenden iterek</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. Tony'nin İtalya'dan getirdiği ve Carmela'nın da hoşlandığı at kuyruklu koruma kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17" value="dogru"><label for="q17_a">Furio Giunta</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17"><label for="q17_b">Artie Bucco</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"><label for="q17_c">Jackie Aprile Jr.</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"><label for="q17_d">Benny Fazio</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. Tony Soprano'nun çocukluk arkadaşı olan ve Vesuvio restoranını işleten şef kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18" value="dogru"><label for="q18_a">Artie Bucco</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18"><label for="q18_b">Hesh Rabkin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"><label for="q18_c">Charmaine</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"><label for="q18_d">Beansie</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. New York mafyasının başı olan ve Tony ile sık sık çatışan, son sezondaki ana düşman kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"><label for="q19_a">Johnny Sack</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19"><label for="q19_b">Carmine Lupertazzi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19" value="dogru"><label for="q19_c">Phil Leotardo</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"><label for="q19_d">Little Carmine</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. Tony'nin vurulduktan sonra komadayken rüyasında kendine verdiği isim/kimlik neydi?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20" value="dogru"><label for="q20_a">Kevin Finnerty</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20"><label for="q20_b">Anthony Barone</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20"><label for="q20_c">Mr. Mob</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"><label for="q20_d">Paulie Walnuts</label></div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 SONUÇ EKRANI</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+            <button onclick="window.location.reload();" class="btn-kapsul" style="background:#8e44ad; color:white; cursor:pointer; margin-top:20px;">Tekrar Çöz</button>
+        </div>
+
+    </div> 
+
+    
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+
+
+    <script>
+        function testiBitir() {
+            let dogru=0, yanlis=0, bos=0; const puan=5;
+            document.querySelectorAll('form').forEach(f=>{
+                const s = f.querySelector('input:checked');
+                f.querySelectorAll('label').forEach(l=>{l.style.color="#ddd";l.style.fontWeight="normal"});
+                if(s){
+                    if(s.value==="dogru"){
+                        dogru++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#2ecc71"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ✅";
+                    } else {
+                        yanlis++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#e74c3c"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ❌"; 
+                        const d=f.querySelector('input[value="dogru"]'); 
+                        if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#2ecc71";
+                    }
+                } else {
+                    bos++; 
+                    const d=f.querySelector('input[value="dogru"]'); 
+                    if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#f1c40f";
+                }
+            });
+
+            const tPuan = dogru*puan;
+            document.getElementById("sonuc-kutusu").style.display="block";
+            document.getElementById("puan-yazisi").innerHTML=`Doğru: <b style="color:#2ecc71">${dogru}</b> | Yanlış: <b style="color:#e74c3c">${yanlis}</b> | Boş: <b style="color:#f1c40f">${bos}</b>`;
+            document.getElementById("toplam-puan-yazisi").innerHTML=`PUAN: ${tPuan}`;
+            
+            let msg=""; 
+            if(tPuan===100) msg="TEBRİKLER! Artık Tony Soprano'nun sağ kolusun! 🚬👑"; 
+            else if(tPuan>=80) msg="Harika! Bada Bing'de yerin hazır! 👏"; 
+            else if(tPuan>=50) msg="Fena değil, ama FBI dinlemesine takılmamaya dikkat et. 😊"; 
+            else msg="Maalesef! Seni Pine Barrens ormanına bıraktılar. 📺";
+            
+            document.getElementById("mesaj").innerHTML=msg; 
+            document.getElementById("mesaj").style.color="#9b59b6";
+            document.getElementById("sonuc-kutusu").scrollIntoView({behavior:'smooth'});
+        }
+
+        function acKapaMenu(){
+            var m=document.getElementById("yanMenu"); 
+            if(m.style.width==="300px") m.style.width="0"; else m.style.width="300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

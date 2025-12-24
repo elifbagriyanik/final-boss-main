@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Game No Life Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script> 
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+
+    
+    <div class="test-kapsayici">
+
+        <h1><strong>🎮 No Game No Life Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Aschente!" Oyun başlasın. Bakalım Kuuhaku kadar zeki misin?</p>
+
+        <h3>1. Sora ve Shiro kardeşlerin oyun dünyasında kullandıkları ve 'asla yenilmeyen' efsanevi grup adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"> <label for="q1_a">Oyun Tanrıları</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"> <label for="q1_b">Kuuhaku (Boşluk)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"> <label for="q1_c">Exceed</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"> <label for="q1_d">Imanity</label></div>
+        </form>
+
+        <h3>2. Sora ve Shiro'yu Disboard dünyasına getiren Oyun Tanrısı'nın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2" value="dogru"> <label for="q2_a">Tet</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2"> <label for="q2_b">Azriel</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"> <label for="q2_c">Artosh</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"> <label for="q2_d">Riku</label></div>
+        </form>
+
+        <h3>3. Disboard dünyasında her türlü şiddetin yasaklandığı ve her şeyin oyunla çözüldüğü kurallara ne denir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3" value="dogru"> <label for="q3_a">On Yemin (Ten Pledges)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3"> <label for="q3_b">Oyun Kanunları</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"> <label for="q3_c">Barış Antlaşması</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"> <label for="q3_d">Mutlak Kurallar</label></div>
+        </form>
+
+        <h3>4. Bir oyuna başlarken tarafların kuralları kabul ettiğini belirtmek için sağ ellerini kaldırıp söyledikleri kelime nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"> <label for="q4_a">Start!</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4" value="dogru"> <label for="q4_b">Aschente</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"> <label for="q4_c">Game On</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"> <label for="q4_d">Checkmate</label></div>
+        </form>
+
+        <h3>5. İnsan ırkı olan 'Imanity', 16 ırk (Exceed) arasında kaçıncı sıradadır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"> <label for="q5_a">1. (En Güçlü)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"> <label for="q5_b">16. (En Zayıf)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"> <label for="q5_c">7.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"> <label for="q5_d">10.</label></div>
+        </form>
+
+        <h3>6. Sora ve Shiro'nun, Stephanie Dola ile tanıştıklarında krallık için oynadıkları ilk oyun neydi?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6"> <label for="q6_a">Satranç</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6" value="dogru"> <label for="q6_b">Taş-Kağıt-Makas</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"> <label for="q6_c">Poker</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"> <label for="q6_d">Blackjack</label></div>
+        </form>
+
+        <h3>7. Jibril hangi ırka mensuptur?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"> <label for="q7_a">Elf</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7"> <label for="q7_b">Warbeast (Savaş Canavarı)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7" value="dogru"> <label for="q7_c">Flügel</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"> <label for="q7_d">Dhampir</label></div>
+        </form>
+
+        <h3>8. Sora ve Shiro'nun Jibril'e karşı oynadıkları ve kelimelerin gerçeğe dönüştüğü oyunun adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8" value="dogru"> <label for="q8_a">Materyalizasyon Shiritori</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"> <label for="q8_b">Sihirli Satranç</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"> <label for="q8_c">Kelime Avı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"> <label for="q8_d">Yasaklı Kelimeler</label></div>
+        </form>
+
+        <h3>9. Sora ve Shiro'nun en büyük zayıflığı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"> <label for="q9_a">Güneş ışığı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9" value="dogru"> <label for="q9_b">Birbirlerinden ayrıldıklarında kriz geçirmeleri</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"> <label for="q9_c">Suya girmek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"> <label for="q9_d">Matematik problemleri</label></div>
+        </form>
+
+        <h3>10. Stephanie Dola, Sora ile girdiği iddiaları sürekli kaybettiği için Sora ona sık sık nasıl hitap eder?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"> <label for="q10_a">Steph</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10"> <label for="q10_b">Dola-chan</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10" value="dogru"> <label for="q10_c">Köpek (Steph-dog)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"> <label for="q10_d">Prenses</label></div>
+        </form>
+
+        <h3>11. On Yemin'e göre 'Hile yapmak' ne zaman suç sayılır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"> <label for="q11_a">Her zaman</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"> <label for="q11_b">Asla</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11" value="dogru"> <label for="q11_c">Sadece yakalandığında</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"> <label for="q11_d">Rakip fark ettiğinde</label></div>
+        </form>
+
+        <h3>12. Warbeast (Savaş Canavarları) ırkının yönettiği ülkenin adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12"> <label for="q12_a">Elven Gard</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12"> <label for="q12_b">Avant Heim</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12" value="dogru"> <label for="q12_c">Doğu Federasyonu (Eastern Union)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"> <label for="q12_d">Elkia</label></div>
+        </form>
+
+        <h3>13. Sora ve Shiro, Warbeast'lere karşı oynadıkları sanal gerçeklik oyununda hangi türe meydan okudular?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13" value="dogru"> <label for="q13_a">FPS (Nişancı Oyunu)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"> <label for="q13_b">RPG</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"> <label for="q13_c">Yarış Oyunu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"> <label for="q13_d">Dövüş Oyunu</label></div>
+        </form>
+
+        <h3>14. Kurami Zell'in ortağı olan ve ona büyü desteği veren Elf karakter kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14" value="dogru"> <label for="q14_a">Fiel Nirvalen</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14"> <label for="q14_b">Jibril</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"> <label for="q14_c">Miko</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"> <label for="q14_d">Plum</label></div>
+        </form>
+
+        <h3>15. Jibril, Shiritori oyununu kaybettiğinde Sora ve Shiro'ya neyini vermiştir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15"> <label for="q15_a">Kanatlarını</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15" value="dogru"> <label for="q15_b">Tüm kütüphanesini ve sadakatini</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"> <label for="q15_c">Ölümsüzlüğünü</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"> <label for="q15_d">Sihirli gücünü</label></div>
+        </form>
+
+        <h3>16. Izuna Hatsuse adlı Warbeast kızın, fiziksel limitlerini aşarak kullandığı yeteneğin adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16" value="dogru"> <label for="q16_a">Kan Yıkımı (Blood Destruction)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16"> <label for="q16_b">Süper Saiyan</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"> <label for="q16_c">Berserk Modu</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"> <label for="q16_d">Canavar İradesi</label></div>
+        </form>
+
+        <h3>17. Sora ve Shiro, Tanrı Tet ile dünyaya gelmeden önce internet üzerinden hangi oyunu oynamışlardır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17" value="dogru"> <label for="q17_a">Satranç</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17"> <label for="q17_b">Go</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"> <label for="q17_c">Shogi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"> <label for="q17_d">Dama</label></div>
+        </form>
+
+        <h3>18. Warbeast ırkının (Izuna ve diğerleri) oyunlarda hile yapmak için kullandıkları temel özellikleri nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"> <label for="q18_a">Görünmezlik</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18" value="dogru"> <label for="q18_b">Altıncı hisleri ve büyüleri görebilmeleri</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"> <label for="q18_c">Zamanı durdurma</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"> <label for="q18_d">Zihin okuma</label></div>
+        </form>
+
+        <h3>19. Sora, Kurami'ye karşı oynadığı satranç oyununda taşları nasıl hareket ettirmiştir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"> <label for="q19_a">Sadece zekasıyla</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19" value="dogru"> <label for="q19_b">Karizması ve iradesiyle taşları ikna ederek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"> <label for="q19_c">Shiro'nun hesaplamalarıyla</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"> <label for="q19_d">Jibril'in büyüsüyle</label></div>
+        </form>
+
+        <h3>20. Boşluk (Blank) ekibinin en önemli felsefesi nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20"> <label for="q20_a">Kazanmak için hile yap</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20" value="dogru"> <label for="q20_b">Boşluk asla kaybetmez</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20"> <label for="q20_c">Eğlenmek kazanmaktan önemlidir</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"> <label for="q20_d">Sadece şanslı olan kazanır</label></div>
+        </form>
+
+        <hr style="border-color: #444; margin-top: 40px;">
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 Test Sonucunuz</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+        </div>
+
+    </div> 
+
+    <script>
+        function testiBitir() {
+            let dogruSayisi = 0;
+            let yanlisSayisi = 0;
+            let bosSayisi = 0;
+            const soruPuani = 5; // Toplam 20 soru var (20x5 = 100)
+            
+            const sorular = document.querySelectorAll('form'); 
+            
+            sorular.forEach((form) => {
+                const secilen = form.querySelector('input[type="radio"]:checked');
+                
+                const etiketler = form.querySelectorAll('label');
+                etiketler.forEach(lbl => {
+                    lbl.style.color = "#ecf0f1"; 
+                    lbl.style.fontWeight = "normal";
+                });
+
+                if (secilen) {
+                    if (secilen.value === "dogru") {
+                        dogruSayisi++;
+                        const label = form.querySelector(`label[for="${secilen.id}"]`);
+                        label.style.color = "#2ecc71"; // Yeşil
+                        label.style.fontWeight = "bold";
+                        label.innerHTML += " ✅"; 
+                    } else {
+                        yanlisSayisi++;
+                        const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                        yanlisLabel.style.color = "#e74c3c"; // Kırmızı
+                        yanlisLabel.style.fontWeight = "bold";
+                        yanlisLabel.innerHTML += " ❌"; 
+
+                        const dogruInput = form.querySelector('input[value="dogru"]');
+                        if(dogruInput) {
+                            const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                            dogruLabel.style.color = "#2ecc71";
+                            dogruLabel.style.fontWeight = "bold";
+                            dogruLabel.innerHTML += " (Doğru Cevap)";
+                        }
+                    }
+                } else {
+                    bosSayisi++;
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#f39c12"; // Turuncu
+                        dogruLabel.innerHTML += " (Boş Bıraktın)";
+                    }
+                }
+            });
+
+            const toplamPuan = dogruSayisi * soruPuani;
+            const sonucKutusu = document.getElementById("sonuc-kutusu");
+            const puanYazisi = document.getElementById("puan-yazisi");
+            const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+            const mesaj = document.getElementById("mesaj");
+
+            sonucKutusu.style.display = "block";
+            
+            puanYazisi.innerHTML = `
+                Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+                Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+                Boş Sayısı: <strong>${bosSayisi}</strong>
+            `;
+
+            toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+            if (toplamPuan === 100) {
+                mesaj.innerHTML = "TEBRİKLER! Sen gerçek bir Exceed'sin! Kuuhaku bile seni yenemez! 🎮🏆";
+                mesaj.style.color = "#2ecc71";
+            } else if (toplamPuan >= 80) {
+                mesaj.innerHTML = "Harika! Imanity'nin kurtarıcısı sensin! 👏";
+                mesaj.style.color = "#3498db";
+            } else if (toplamPuan >= 50) {
+                mesaj.innerHTML = "Fena değil, ama Stephanie Dola kadar safsın. Dikkat et! 😊";
+                mesaj.style.color = "#f39c12";
+            } else {
+                mesaj.innerHTML = "Kaybettin! Aschente'yi unuttun mu? Tekrar dene! 📺";
+                mesaj.style.color = "#e74c3c";
+            }
+
+            sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function acKapaMenu() {
+            var menu = document.getElementById("yanMenu");
+            if (menu.style.width === "250px") { menu.style.width = "0"; } 
+            else { menu.style.width = "250px"; }
+        }
+    </script>
+
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+</html>
+
+
+
+
+
+

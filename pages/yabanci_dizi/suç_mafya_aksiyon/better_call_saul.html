@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Call Saul Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script>
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+
+    <div class="test-kapsayici">
+        
+        <h1><strong>⚖️ Better Call Saul Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"S'all good, man!" Bakalım hukuk bilgin Jimmy McGill kadar iyi mi?</p>
+
+        <div class="soru-karti">
+            <h3>1. Dizinin ana karakteri olan Saul Goodman'ın asıl (doğum) adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"><label for="q1_a">Charles McGill</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"><label for="q1_b">James (Jimmy) McGill</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"><label for="q1_c">Howard Hamlin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"><label for="q1_d">Kim Wexler</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. Jimmy'nin abisi Chuck McGill'in sahip olduğunu iddia ettiği hastalık nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"><label for="q2_a">Kanser</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2" value="dogru"><label for="q2_b">Elektromanyetik Aşırı Duyarlılık (Elektriğe alerji)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"><label for="q2_c">Şizofreni</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"><label for="q2_d">Agorafobi</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. Jimmy'nin hayatındaki en önemli kişi olan ve sonradan evlendiği avukat kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"><label for="q3_a">Skyler White</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3" value="dogru"><label for="q3_b">Kim Wexler</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"><label for="q3_c">Marie Schrader</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"><label for="q3_d">Lydia Rodarte-Quayle</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. Mike Ehrmantraut, otopark görevlisi olmadan önce hangi mesleği yapıyordu?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"><label for="q4_a">Asker</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4" value="dogru"><label for="q4_b">Philadelphia Polisi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"><label for="q4_c">Kiralık Katil</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"><label for="q4_d">Tırcı</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. Jimmy'nin dolandırıcılık yaptığı gençlik yıllarındaki lakabı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5" value="dogru"><label for="q5_a">Slippin' Jimmy (Kaypak Jimmy)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5"><label for="q5_b">Magic Man</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"><label for="q5_c">Bulletproof</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"><label for="q5_d">Viktor</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. Chuck McGill ve Howard Hamlin'in kurduğu prestijli hukuk firmasının adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6"><label for="q6_a">Davis & Main</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6"><label for="q6_b">Schweikart & Cokely</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6" value="dogru"><label for="q6_c">HHM (Hamlin, Hamlin & McGill)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"><label for="q6_d">Wexler & McGill</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. Gus Fring'in, Salamanca ailesine karşı kullandığı ve sonradan taraf değiştiren köstebek kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"><label for="q7_a">Lalo Salamanca</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7" value="dogru"><label for="q7_b">Nacho Varga</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"><label for="q7_c">Tuco Salamanca</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"><label for="q7_d">Krazy-8</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. Dizinin en korkulan ve karizmatik kötü adamlarından biri olan Salamanca üyesi kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8" value="dogru"><label for="q8_a">Lalo Salamanca</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"><label for="q8_b">Tuco Salamanca</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"><label for="q8_c">Marco Salamanca</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"><label for="q8_d">Joaquin Salamanca</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. Jimmy, hukuk diplomasını hangi üniversiteden (uzaktan eğitimle) almıştır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"><label for="q9_a">Harvard</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9"><label for="q9_b">University of New Mexico</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9" value="dogru"><label for="q9_c">University of American Samoa</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"><label for="q9_d">Yale</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. Breaking Bad sonrası dönemde (siyah-beyaz sahneler), Jimmy hangi isimle saklanmaktadır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"><label for="q10_a">Saul Goodman</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10" value="dogru"><label for="q10_b">Gene Takavic</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"><label for="q10_c">Viktor St. Claire</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"><label for="q10_d">Kevin Wachtell</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. Gene Takavic (Jimmy) saklandığı Omaha şehrinde nerede çalışmaktadır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"><label for="q11_a">Bir benzinlikte</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11" value="dogru"><label for="q11_b">Cinnabon (Tarçınlı çörekçi) Müdürü olarak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11"><label for="q11_c">Kütüphanede</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"><label for="q11_d">Taksi şoförü olarak</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. Jimmy'nin yaşlıları savunduğu ve büyük bir dava haline gelen huzurevinin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12" value="dogru"><label for="q12_a">Sandpiper Crossing</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12"><label for="q12_b">Green Oaks</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"><label for="q12_c">Casa Tranquila</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"><label for="q12_d">Sunnyvale</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. Mike Ehrmantraut'un yasa dışı işlere girmesinin temel sebebi nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13"><label for="q13_a">Zengin olmak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13" value="dogru"><label for="q13_b">Torunu Kaylee ve gelinine maddi destek sağlamak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"><label for="q13_c">Kumar borcunu ödemek</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"><label for="q13_d">Heyecan aramak</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. Chuck McGill nasıl ölmüştür?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"><label for="q14_a">Kalp krizinden</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"><label for="q14_b">İntihar ederek (Evini yakarak)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"><label for="q14_c">Lalo tarafından vurularak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"><label for="q14_d">Elektrik çarpmasından</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Howard Hamlin'in ölümü nasıl gerçekleşmiştir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15"><label for="q15_a">Araba kazası</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15" value="dogru"><label for="q15_b">Lalo Salamanca tarafından Jimmy'nin evinde vurularak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"><label for="q15_c">Kalp krizi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"><label for="q15_d">İntihar</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. Jimmy ve Kim'in barda yabancıları dolandırırken kullandıkları takma isimler nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16"><label for="q16_a">Bonnie ve Clyde</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16" value="dogru"><label for="q16_b">Viktor ve Giselle</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"><label for="q16_c">Ken ve Barbie</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"><label for="q16_d">Rick ve Ilsa</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. Hector Salamanca'yı felç bırakan (ilaçlarını değiştiren) kişi kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17"><label for="q17_a">Gus Fring</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17"><label for="q17_b">Mike Ehrmantraut</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17" value="dogru"><label for="q17_c">Nacho Varga</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"><label for="q17_d">Tuco</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. Jimmy'nin mahkemede abisi Chuck'ı sinirlendirip gerçek yüzünü ortaya çıkardığı meşhur bölümün adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18" value="dogru"><label for="q18_a">Chicanery</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18"><label for="q18_b">Winner</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"><label for="q18_c">Bagman</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"><label for="q18_d">Saul Gone</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. 'Saul Goodman' ismi hangi deyimden türetilmiştir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"><label for="q19_a">Soul Good Man</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19" value="dogru"><label for="q19_b">It's all good, man (S'all good, man)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"><label for="q19_c">Salt Good Man</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"><label for="q19_d">So Good Man</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. Dizinin finalinde Jimmy McGill kaç yıl hapis cezasına çarptırılır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20"><label for="q20_a">7 yıl</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20"><label for="q20_b">30 yıl</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20" value="dogru"><label for="q20_c">86 yıl</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"><label for="q20_d">Müebbet</label></div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 SONUÇ EKRANI</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+            <button onclick="window.location.reload();" class="btn-kapsul" style="background:#8e44ad; color:white; cursor:pointer; margin-top:20px;">Tekrar Çöz</button>
+        </div>
+
+    </div> 
+
+    
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+
+
+    <script>
+        function testiBitir() {
+            let dogru=0, yanlis=0, bos=0; const puan=5;
+            document.querySelectorAll('form').forEach(f=>{
+                const s = f.querySelector('input:checked');
+                f.querySelectorAll('label').forEach(l=>{l.style.color="#ddd";l.style.fontWeight="normal"});
+                if(s){
+                    if(s.value==="dogru"){
+                        dogru++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#2ecc71"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ✅";
+                    } else {
+                        yanlis++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#e74c3c"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ❌"; 
+                        const d=f.querySelector('input[value="dogru"]'); 
+                        if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#2ecc71";
+                    }
+                } else {
+                    bos++; 
+                    const d=f.querySelector('input[value="dogru"]'); 
+                    if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#f1c40f";
+                }
+            });
+
+            const tPuan = dogru*puan;
+            document.getElementById("sonuc-kutusu").style.display="block";
+            document.getElementById("puan-yazisi").innerHTML=`Doğru: <b style="color:#2ecc71">${dogru}</b> | Yanlış: <b style="color:#e74c3c">${yanlis}</b> | Boş: <b style="color:#f1c40f">${bos}</b>`;
+            document.getElementById("toplam-puan-yazisi").innerHTML=`PUAN: ${tPuan}`;
+            
+            let msg=""; 
+            if(tPuan===100) msg="TEBRİKLER! Sen gerçek bir avukatsın! ⚖️🏆"; 
+            else if(tPuan>=80) msg="Harika! Kim Wexler seninle gurur duyardı! 👏"; 
+            else if(tPuan>=50) msg="Fena değil, ama biraz daha hukuk çalışmalısın. 😊"; 
+            else msg="Maalesef! Cinnabon'da işe başlamalısın. 📺";
+            
+            document.getElementById("mesaj").innerHTML=msg; 
+            document.getElementById("mesaj").style.color="#9b59b6";
+            document.getElementById("sonuc-kutusu").scrollIntoView({behavior:'smooth'});
+        }
+
+        function acKapaMenu(){
+            var m=document.getElementById("yanMenu"); 
+            if(m.style.width==="300px") m.style.width="0"; else m.style.width="300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

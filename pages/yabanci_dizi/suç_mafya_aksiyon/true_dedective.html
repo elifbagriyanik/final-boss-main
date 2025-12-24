@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Detective Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script>
+
+      <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+    <div class="test-kapsayici">
+        
+        <h1><strong>🌀 True Detective Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Zaman düz bir çemberdir." Carcosa'nın sırrını çözebilir misin?</p>
+
+        <div class="soru-karti">
+            <h3>1. Efsanevi 1. Sezonun başrol dedektifleri Rust Cohle ve Marty Hart'ı kimler canlandırmıştır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"><label for="q1_a">Brad Pitt & Edward Norton</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"><label for="q1_b">Matthew McConaughey & Woody Harrelson</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"><label for="q1_c">Al Pacino & Robert De Niro</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"><label for="q1_d">Colin Farrell & Vince Vaughn</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. Rust Cohle'un hayat felsefesini özetleyen ve dizinin en meşhur repliği nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"><label for="q2_a">Kış geliyor</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2" value="dogru"><label for="q2_b">Zaman düz bir çemberdir (Time is a flat circle)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"><label for="q2_c">Ben tehlikenin ta kendisiyim</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"><label for="q2_d">Herkes yalan söyler</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. True Detective 1. Sezon hangi ABD eyaletinde geçmektedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"><label for="q3_a">New York</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3"><label for="q3_b">California</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3" value="dogru"><label for="q3_c">Louisiana</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"><label for="q3_d">Teksas</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. 1. Sezondaki seri katilin kurbanlarının sırtına çizdiği sembol nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"><label for="q4_a">Bir göz</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4" value="dogru"><label for="q4_b">Sarmal / Spiral</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"><label for="q4_c">Haç</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"><label for="q4_d">Yıldız</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. Dedektiflerin peşinde olduğu, ritüellerle bağlantılı gizemli varlığın/kralın adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"><label for="q5_a">Kızıl Kral</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"><label for="q5_b">Sarı Kral (The Yellow King)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"><label for="q5_c">Gece Kralı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"><label for="q5_d">Karanlık Prens</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. Rust Cohle'un sorgu odasında bira kutularından yaptığı figürler neye benzer?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6" value="dogru"><label for="q6_a">Küçük adamlar</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6"><label for="q6_b">Kuleler</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"><label for="q6_c">Hayvanlar</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"><label for="q6_d">Arabalar</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. Rust Cohle'un takma adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"><label for="q7_a">The Brain (Beyin)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7" value="dogru"><label for="q7_b">The Taxman (Vergici)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"><label for="q7_c">The Hunter (Avcı)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"><label for="q7_d">Crash</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. Dizide sıkça bahsedilen efsanevi/mistik şehrin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8" value="dogru"><label for="q8_a">Carcosa</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"><label for="q8_b">Atlantis</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"><label for="q8_c">El Dorado</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"><label for="q8_d">Valhalla</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. Marty Hart'ın kişisel hayatındaki en büyük sorunu nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"><label for="q9_a">Kumar bağımlılığı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9" value="dogru"><label for="q9_b">Karısını aldatması ve aile sorunları</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"><label for="q9_c">Uyuşturucu satması</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"><label for="q9_d">Gizli bir ajan olması</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. 1. Sezonun hikayesi kaç farklı zaman diliminde anlatılır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"><label for="q10_a">Tek bir zaman</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10"><label for="q10_b">İki (1995 ve 2012)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10" value="dogru"><label for="q10_c">Üç (1995, 2002, 2012)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"><label for="q10_d">Beş</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. Olay yerinde bulunan 'Kuş Kapanı' (Devil's Nests) denilen nesneler neden yapılmıştır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"><label for="q11_a">Demirden</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"><label for="q11_b">Kemikten</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11" value="dogru"><label for="q11_c">Dallardan ve çalı çırpıdan</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"><label for="q11_d">Plastikten</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. Rust Cohle, dedektiflikten ayrıldıktan sonra 2012 yılında nerede çalışmaktadır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12" value="dogru"><label for="q12_a">Bir barda barmen olarak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12"><label for="q12_b">Güvenlik görevlisi olarak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"><label for="q12_c">Kamyon şoförü olarak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"><label for="q12_d">Balıkçı olarak</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. 3. Sezonun başrolünde, hafıza sorunları yaşayan dedektifi canlandıran Oscar ödüllü oyuncu kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13" value="dogru"><label for="q13_a">Mahershala Ali</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"><label for="q13_b">Denzel Washington</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"><label for="q13_c">Morgan Freeman</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"><label for="q13_d">Idris Elba</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. Dizideki 'The King in Yellow' (Sarı Kral) referansı aslen hangi tür bir eserden gelir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"><label for="q14_a">Bir çizgi roman</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"><label for="q14_b">Robert W. Chambers'ın kısa öykü kitabı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"><label for="q14_c">Bir film</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"><label for="q14_d">Bir şarkı</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Rust Cohle'un kızının ölüm sebebi neydi?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"><label for="q15_a">Araba kazası</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"><label for="q15_b">Cinayet</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"><label for="q15_c">Hastalık</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"><label for="q15_d">Kaçırılma</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. 1. Sezonun finalinde Rust ve Marty'nin baskın yaptığı, labirent gibi olan yerin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16" value="dogru"><label for="q16_a">Carcosa (Childress'ın evi)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16"><label for="q16_b">Bataklık Kalesi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"><label for="q16_c">Terk edilmiş kilise</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"><label for="q16_d">Eski okul</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. 4. Sezon: Night Country'nin başrolünde hangi ünlü kadın oyuncu yer almaktadır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17" value="dogru"><label for="q17_a">Jodie Foster</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17"><label for="q17_b">Meryl Streep</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"><label for="q17_c">Kate Winslet</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"><label for="q17_d">Julia Roberts</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. 1. Sezonda katili tanımlayan en belirgin fiziksel özellik ipucu neydi?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"><label for="q18_a">Tek gözlü olması</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18"><label for="q18_b">Topallaması</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18" value="dogru"><label for="q18_c">Yüzünün alt kısmında yara izleri olması (Yeşil Kulaklı Spagetti Canavarı)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"><label for="q18_d">Kel olması</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. Rust Cohle'un halüsinasyonlar görmesinin sebebi nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"><label for="q19_a">Şizofreni</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19" value="dogru"><label for="q19_b">Narkotik şubede çalışırken uzun süre uyuşturucu kullanması</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"><label for="q19_c">Uykusuzluk</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"><label for="q19_d">Doğaüstü güçler</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. 1. Sezonun ikonik jenerik müziği 'Far From Any Road' hangi gruba aittir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20" value="dogru"><label for="q20_a">The Handsome Family</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20"><label for="q20_b">Leonard Cohen</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20"><label for="q20_c">Bob Dylan</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"><label for="q20_d">Pink Floyd</label></div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 SONUÇ EKRANI</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+            <button onclick="window.location.reload();" class="btn-kapsul" style="background:#8e44ad; color:white; cursor:pointer; margin-top:20px;">Tekrar Çöz</button>
+        </div>
+
+    </div> 
+
+    
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+
+
+    <script>
+        function testiBitir() {
+            let dogru=0, yanlis=0, bos=0; const puan=5;
+            document.querySelectorAll('form').forEach(f=>{
+                const s = f.querySelector('input:checked');
+                f.querySelectorAll('label').forEach(l=>{l.style.color="#ddd";l.style.fontWeight="normal"});
+                if(s){
+                    if(s.value==="dogru"){
+                        dogru++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#2ecc71"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ✅";
+                    } else {
+                        yanlis++; 
+                        f.querySelector(`label[for="${s.id}"]`).style.color="#e74c3c"; 
+                        f.querySelector(`label[for="${s.id}"]`).innerHTML+=" ❌"; 
+                        const d=f.querySelector('input[value="dogru"]'); 
+                        if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#2ecc71";
+                    }
+                } else {
+                    bos++; 
+                    const d=f.querySelector('input[value="dogru"]'); 
+                    if(d) f.querySelector(`label[for="${d.id}"]`).style.color="#f1c40f";
+                }
+            });
+
+            const tPuan = dogru*puan;
+            document.getElementById("sonuc-kutusu").style.display="block";
+            document.getElementById("puan-yazisi").innerHTML=`Doğru: <b style="color:#2ecc71">${dogru}</b> | Yanlış: <b style="color:#e74c3c">${yanlis}</b> | Boş: <b style="color:#f1c40f">${bos}</b>`;
+            document.getElementById("toplam-puan-yazisi").innerHTML=`PUAN: ${tPuan}`;
+            
+            let msg=""; 
+            if(tPuan===100) msg="TEBRİKLER! Carcosa'nın Kralı Sensin! 🌀👑"; 
+            else if(tPuan>=80) msg="Harika! Rust Cohle kadar derin düşünebiliyorsun! 👏"; 
+            else if(tPuan>=50) msg="Fena değil, ama biraz daha dikkatli bakmalısın. 😊"; 
+            else msg="Maalesef! Sarı Kral seni yakaladı. 📺";
+            
+            document.getElementById("mesaj").innerHTML=msg; 
+            document.getElementById("mesaj").style.color="#9b59b6";
+            document.getElementById("sonuc-kutusu").scrollIntoView({behavior:'smooth'});
+        }
+
+        function acKapaMenu(){
+            var m=document.getElementById("yanMenu"); 
+            if(m.style.width==="300px") m.style.width="0"; else m.style.width="300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

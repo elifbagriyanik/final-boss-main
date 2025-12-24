@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script> 
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+    <div class="test-kapsayici">
+
+        <h1><strong>🧠 Monster Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Yardım et! İçimdeki canavar büyüyor!" Bakalım Johan'ın oyununu çözebilecek misin?</p>
+
+        <h3>1. Hikayenin başrolü Dr. Kenzo Tenma'nın uzmanlık alanı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"> <label for="q1_a">Kalp Cerrahı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"> <label for="q1_b">Beyin Cerrahı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"> <label for="q1_c">Psikiyatrist</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"> <label for="q1_d">Adli Tıp Uzmanı</label></div>
+        </form>
+
+        <h3>2. Dr. Tenma, Belediye Başkanı yerine kimi ameliyat ederek hayatını kurtarmış ve olaylar zincirini başlatmıştır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"> <label for="q2_a">Bir Türk işçiyi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2"> <label for="q2_b">Eva Heinemann'ı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2" value="dogru"> <label for="q2_c">Johan Liebert'i</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"> <label for="q2_d">General Wolf'u</label></div>
+        </form>
+
+        <h3>3. Tenma'nın peşine düşen, takıntılı ve hafızası çok kuvvetli olan BKA dedektifi kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3" value="dogru"> <label for="q3_a">Heinrich Lunge</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3"> <label for="q3_b">Jan Suk</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"> <label for="q3_c">Richard Braun</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"> <label for="q3_d">Wolfgang Grimmer</label></div>
+        </form>
+
+        <h3>4. Johan'ın ve diğer çocukların duygularının yok edilerek 'asker' olarak yetiştirildiği yetimhanenin adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4" value="dogru"> <label for="q4_a">Kinderheim 511</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4"> <label for="q4_b">Kızıl Gül Konağı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"> <label for="q4_c">Üç Kurbağa</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"> <label for="q4_d">Yetimhane 47</label></div>
+        </form>
+
+        <h3>5. Johan'ın ikiz kız kardeşi Anna Liebert, yeni hayatında hangi ismi kullanmaktadır?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"> <label for="q5_a">Eva Heinemann</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"> <label for="q5_b">Nina Fortner</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"> <label for="q5_c">Lotte Frank</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"> <label for="q5_d">Viera</label></div>
+        </form>
+
+        <h3>6. Hikayenin merkezindeki ürkütücü çocuk kitabının adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6"> <label for="q6_a">Barış Tanrısı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6" value="dogru"> <label for="q6_b">İsimsiz Canavar (The Nameless Monster)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"> <label for="q6_c">Büyük Gözlü ve Büyük Ağızlı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"> <label for="q6_d">Karanlığın İçinde</label></div>
+        </form>
+
+        <h3>7. Eski bir casus olan ve stres altındayken 'Muhteşem Steiner' adlı bir kişiliğe bürünen gazeteci kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"> <label for="q7_a">Roberto</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7" value="dogru"> <label for="q7_b">Wolfgang Grimmer</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"> <label for="q7_c">Karl Neumann</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"> <label for="q7_d">Dr. Gillen</label></div>
+        </form>
+
+        <h3>8. İsimsiz Canavar kitabının yazarı ve ikizlerin üzerinde deneyler yapan asıl kişi kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8"> <label for="q8_a">General Wolf</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"> <label for="q8_b">Petr Capek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8" value="dogru"> <label for="q8_c">Franz Bonaparta (Klaus Poppe)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"> <label for="q8_d">Hartmann</label></div>
+        </form>
+
+        <h3>9. Dr. Tenma'nın eski nişanlısı olan ve Johan olayından sonra hayatı tepetaklak olan karakter kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9" value="dogru"> <label for="q9_a">Eva Heinemann</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9"> <label for="q9_b">Nina Fortner</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"> <label for="q9_c">Margot Langer</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"> <label for="q9_d">Viera</label></div>
+        </form>
+
+        <h3>10. Dedektif Lunge, bir vakayı çözerken veya bilgileri hafızasına kaydederken eliyle ne yapar?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10"> <label for="q10_a">Sürekli parmak şıklatır</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10" value="dogru"> <label for="q10_b">Havada daktilo/klavye tuşlarına basıyormuş gibi yapar</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"> <label for="q10_c">Saçını çeker</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"> <label for="q10_d">Para çevirir</label></div>
+        </form>
+
+        <h3>11. Tenma'nın yanına aldığı, futbolu seven ve karanlık bir geçmişten kurtarılan küçük çocuğun adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11" value="dogru"> <label for="q11_a">Dieter</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11"> <label for="q11_b">Karl</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11"> <label for="q11_c">Wim</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"> <label for="q11_d">Milos</label></div>
+        </form>
+
+        <h3>12. Johan'ın alnını işaret ederek Tenma'ya sık sık söylediği şey nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12"> <label for="q12_a">Beni sev.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12" value="dogru"> <label for="q12_b">Beni vur.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"> <label for="q12_c">Ben bir canavarım.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"> <label for="q12_d">Ben gerçeğim.</label></div>
+        </form>
+
+        <h3>13. Hikayenin finalinin (katliamın) gerçekleştiği kasabanın adı nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13" value="dogru"> <label for="q13_a">Ruhenheim</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"> <label for="q13_b">Prag</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"> <label for="q13_c">Düsseldorf</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"> <label for="q13_d">Munich</label></div>
+        </form>
+
+        <h3>14. Johan'ın en sadık adamı olan, iri yarı ve eski bir Kinderheim 511 öğrencisi olan tetikçi kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14" value="dogru"> <label for="q14_a">Roberto</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14"> <label for="q14_b">Christof</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"> <label for="q14_c">Capek</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"> <label for="q14_d">Jurgens</label></div>
+        </form>
+
+        <h3>15. Johan Liebert'e ismini veren (ve onu bulan) asker kimdir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"> <label for="q15_a">General Wolf</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"> <label for="q15_b">Franz Bonaparta</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"> <label for="q15_c">Hartmann</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"> <label for="q15_d">Gedlitz</label></div>
+        </form>
+
+        <h3>16. İsimsiz Canavar kitabında, batıya giden canavar sonunda neye dönüşmüştür?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16"> <label for="q16_a">Bir krala</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16" value="dogru"> <label for="q16_b">Hiç kimseye (Kendi ismini bile yiyip bitirmiştir)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"> <label for="q16_c">Bir taşa</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"> <label for="q16_d">Bir ejderhaya</label></div>
+        </form>
+
+        <h3>17. Tenma'nın hastanede bulduğu, Johan'ın odasındaki duvara kazınmış olan mesaj nedir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17" value="dogru"> <label for="q17_a">Yardım et! İçimdeki canavar büyüyor!</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17"> <label for="q17_b">Dünyanın sonunu izle.</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"> <label for="q17_c">Benim adım ne?</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"> <label for="q17_d">Beni unutma.</label></div>
+        </form>
+
+        <h3>18. Johan ve Anna'nın (Nina) gerçek annelerinin yaşadığı ve Bonaparta'nın okuma etkinlikleri düzenlediği yer neresidir?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"> <label for="q18_a">Üç Kurbağa Binası</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18" value="dogru"> <label for="q18_b">Kırmızı Gül Konağı</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"> <label for="q18_c">Eski Kütüphane</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"> <label for="q18_d">Vampir Evi</label></div>
+        </form>
+
+        <h3>19. Serinin son sahnesinde, hastane odasında ne görülür?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"> <label for="q19_a">Johan gülümsemektedir</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19"> <label for="q19_b">Johan ölmüştür</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19" value="dogru"> <label for="q19_c">Yatak boştur (Johan gitmiştir)</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"> <label for="q19_d">Tenma tutuklanmıştır</label></div>
+        </form>
+
+        <h3>20. Johan'ın planladığı 'Mükemmel İntihar' neyi amaçlıyordu?</h3>
+        <form>
+            <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20"> <label for="q20_a">Dünyayı yok etmeyi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20" value="dogru"> <label for="q20_b">Kendisini tanıyan herkesi öldürüp, varlığının dünyadan tamamen silinmesini</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20"> <label for="q20_c">Tenma'yı canavara dönüştürmeyi</label></div>
+            <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"> <label for="q20_d">Almanya'nın başına geçmeyi</label></div>
+        </form>
+
+        <hr style="border-color: #444; margin-top: 40px;">
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 Test Sonucunuz</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+        </div>
+
+    </div> 
+
+    <script>
+        function testiBitir() {
+            let dogruSayisi = 0;
+            let yanlisSayisi = 0;
+            let bosSayisi = 0;
+            const soruPuani = 5; // Toplam 20 soru var (20x5 = 100)
+            
+            const sorular = document.querySelectorAll('form'); 
+            
+            sorular.forEach((form) => {
+                const secilen = form.querySelector('input[type="radio"]:checked');
+                
+                const etiketler = form.querySelectorAll('label');
+                etiketler.forEach(lbl => {
+                    lbl.style.color = "#ecf0f1"; 
+                    lbl.style.fontWeight = "normal";
+                });
+
+                if (secilen) {
+                    if (secilen.value === "dogru") {
+                        dogruSayisi++;
+                        const label = form.querySelector(`label[for="${secilen.id}"]`);
+                        label.style.color = "#2ecc71"; // Yeşil
+                        label.style.fontWeight = "bold";
+                        label.innerHTML += " ✅"; 
+                    } else {
+                        yanlisSayisi++;
+                        const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                        yanlisLabel.style.color = "#e74c3c"; // Kırmızı
+                        yanlisLabel.style.fontWeight = "bold";
+                        yanlisLabel.innerHTML += " ❌"; 
+
+                        const dogruInput = form.querySelector('input[value="dogru"]');
+                        if(dogruInput) {
+                            const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                            dogruLabel.style.color = "#2ecc71";
+                            dogruLabel.style.fontWeight = "bold";
+                            dogruLabel.innerHTML += " (Doğru Cevap)";
+                        }
+                    }
+                } else {
+                    bosSayisi++;
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#f39c12"; // Turuncu
+                        dogruLabel.innerHTML += " (Boş Bıraktın)";
+                    }
+                }
+            });
+
+            const toplamPuan = dogruSayisi * soruPuani;
+            const sonucKutusu = document.getElementById("sonuc-kutusu");
+            const puanYazisi = document.getElementById("puan-yazisi");
+            const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+            const mesaj = document.getElementById("mesaj");
+
+            sonucKutusu.style.display = "block";
+            
+            puanYazisi.innerHTML = `
+                Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+                Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+                Boş Sayısı: <strong>${bosSayisi}</strong>
+            `;
+
+            toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+            if (toplamPuan === 100) {
+                mesaj.innerHTML = "TEBRİKLER! İsimsiz Canavar artık yok! Johan'ın zihnini okudun! 🧠🏆";
+                mesaj.style.color = "#2ecc71";
+            } else if (toplamPuan >= 80) {
+                mesaj.innerHTML = "Harika! Bir Dr. Tenma kadar zeki ve dikkatlisin! 👏";
+                mesaj.style.color = "#3498db";
+            } else if (toplamPuan >= 50) {
+                mesaj.innerHTML = "Fena değil, ama Lunge gibi parmaklarınla daha çok çalışmalısın. 😊";
+                mesaj.style.color = "#f39c12";
+            } else {
+                mesaj.innerHTML = "Dikkat et! Canavar seni yutabilir! Bonaparta'nın masallarını tekrar oku! 📺";
+                mesaj.style.color = "#e74c3c";
+            }
+
+            sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function acKapaMenu() {
+            var menu = document.getElementById("yanMenu");
+            if (menu.style.width === "250px") { menu.style.width = "0"; } 
+            else { menu.style.width = "250px"; }
+        }
+    </script>
+
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+</html>
+
+
+
+
+
+

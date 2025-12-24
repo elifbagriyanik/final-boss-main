@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer {
+        background-color: var(--footer-bg);
+        color: var(--text-color);
+        padding: 15px 0;
+        font-family: 'Segoe UI', sans-serif;
+        border-top: 2px solid var(--accent-color);
+        font-size: 11px;
+    }
+
+    .footer-icerik {
+        display: flex;
+        justify-content: center; /* Ortala */
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 10px; /* Kutular arası boşluk */
+        padding: 0 10px;
+    }
+
+    .footer-blok {
+        flex: 1;
+        /* --- DÜZELTME BURADA --- */
+        min-width: 140px; /* 180px'i 140px yaptık ki mobilde yan yana sığsınlar */
+        max-width: 400px; /* Çok da yayılmasınlar */
+        /* ----------------------- */
+        background: var(--footer-block-bg);
+        padding: 8px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .footer-blok h3 {
+        color: var(--highlight-color);
+        margin: 0 0 8px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: block;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 3px;
+    }
+
+    .yatay-dizilis {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .iletisim-link {
+        display: inline-flex;
+        align-items: center;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: 0.2s;
+        gap: 3px;
+    }
+
+    .iletisim-link:hover {
+        color: var(--text-color);
+    }
+
+    .renkli-ikon {
+        width: 22px;
+        height: 22px;
+        background: var(--surface-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .renkli-ikon:hover {
+        transform: scale(1.1);
+    }
+
+    .fa-instagram { color: #E1306C; }
+    .fa-whatsapp { color: #25D366; }
+    .fa-x-twitter { color: var(--text-color); }
+    .fa-youtube { color: #FF0000; }
+    .fa-envelope { color: #f1c40f; }
+
+    .telif-mini {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        color: var(--text-muted);
+        margin-top: 10px;
+        padding-top: 5px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    /* MOBİL İÇİN EKSTRA GÜVENLİK */
+    @media screen and (max-width: 400px) {
+        .footer-icerik {
+            flex-wrap: nowrap; /* Asla alt alta geçmesin */
+        }
+        .footer-blok {
+            min-width: auto; /* Genişlik zorlamasını kaldır */
+            width: 50%; /* Ekranı yarı yarıya paylaşsınlar */
+        }
+    }
+</style>
+
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../pages/turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>

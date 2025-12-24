@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Testi</title>
+    
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script>
+
+     <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+
+    <div class="test-kapsayici">
+        <h1><strong>⚡ Harry Potter Büyük Testi</strong></h1>
+        <p class="alt-baslik">Asanı hazırla! Bakalım 30 soruda kaç puan alacaksın?</p>
+
+        <div class="soru-karti">
+            <h3>1. Harry'nin Quidditch pozisyonu nedir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_a" name="q1">
+                    <label for="q1_a">Vurucu</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_b" name="q1">
+                    <label for="q1_b">Tutucu</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_c" name="q1">
+                    <label for="q1_c">Kovalayıcı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q1_d" name="q1" value="dogru">
+                    <label for="q1_d">Arayıcı</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. Hermione'ye zaman döndürücüyü kim verdi?</h3>
+             <img src="harry resim/2.jpeg" alt="Hermione" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_a" name="q2">
+                    <label for="q2_a">Dumbledore</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_b" name="q2" value="dogru">
+                    <label for="q2_b">McGonagall</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_c" name="q2">
+                    <label for="q2_c">Snape</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q2_d" name="q2">
+                    <label for="q2_d">Flitwick</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. Voldemort'un gerçek adı nedir?</h3>
+             <img src="harry resim/3.gif" alt="Voldemort" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_a" name="q3" value="dogru">
+                    <label for="q3_a">Tom Marvolo Riddle</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_b" name="q3">
+                    <label for="q3_b">Antonin Dolohov</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_c" name="q3">
+                    <label for="q3_c">Gellert Grindelwald</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q3_d" name="q3">
+                    <label for="q3_d">Marfin Gaunt</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. Grindelwald'un ölüm yılı ve nedeni hangisidir?</h3>
+             <img src="harry resim/4.jpeg" alt="Grindelwald" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_a" name="q4" value="dogru">
+                    <label for="q4_a">1998 - Voldemort öldürdü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_b" name="q4">
+                    <label for="q4_b">1998 - Hastalıktan öldü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_c" name="q4">
+                    <label for="q4_c">1995 - Savaşta Dumbledore öldürdü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q4_d" name="q4">
+                    <label for="q4_d">2000 - Sihir kazası sonucu öldü</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. Harry'nin Hogwarts'taki ilk yılındaki müdür kimdir?</h3>
+             <img src="harry resim/5.jpg" alt="Hogwarts müdür" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_a" name="q5">
+                    <label for="q5_a">Umbridge</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_b" name="q5">
+                    <label for="q5_b">Grindelwald</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_c" name="q5" value="dogru">
+                    <label for="q5_c">Dumbledore</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q5_d" name="q5">
+                    <label for="q5_d">Slughorn</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. Sirius Black hangi evde okumuştur?</h3>
+             <img src="harry resim/6.gif" alt="Sirius Black" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_a" name="q6" value="dogru">
+                    <label for="q6_a">Gryffindor</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_b" name="q6">
+                    <label for="q6_b">Hufflepuff</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_c" name="q6">
+                    <label for="q6_c">Slytherin</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q6_d" name="q6">
+                    <label for="q6_d">Ravenclaw</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. Gryffindor'un ortak salonuna girmek için kime parola söylenirdi?</h3>
+             <img src="harry resim/7.jpeg" alt="Gryffindor ortak salon" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_a" name="q7">
+                    <label for="q7_a">Obur Şövalye</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_b" name="q7">
+                    <label for="q7_b">Neredeyse Kafasız Nick</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_c" name="q7" value="dogru">
+                    <label for="q7_c">Şişman Leydi</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q7_d" name="q7">
+                    <label for="q7_d">Kanlı Baron</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. Voldemort'un ruhunu ilk kez bölen cinayet hangisiydi?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_a" name="q8">
+                    <label for="q8_a">Hepzibah Smith</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_b" name="q8">
+                    <label for="q8_b">Tom Riddle Sr.</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_c" name="q8">
+                    <label for="q8_c">Myrtle</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q8_d" name="q8" value="dogru">
+                    <label for="q8_d">Thomas Gaunt</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. Regulus Black'in ölüm nedeni nedir?</h3>
+             <img src="harry resim/9.jpeg" alt="Regulus Black" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_a" name="q9">
+                    <label for="q9_a">Basilisk öldürdü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_b" name="q9">
+                    <label for="q9_b">Voldemort öldürdü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_c" name="q9" value="dogru">
+                    <label for="q9_c">Horcrux'u yok etmeye çalışırken öldü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q9_d" name="q9">
+                    <label for="q9_d">Kazara öldü</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. Hangi evin sembolü bir porsuğu temsil eder?</h3>
+             <img src="harry resim/10.jpg" alt="porsuk sembolü" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_a" name="q10">
+                    <label for="q10_a">Gryffindor</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_b" name="q10">
+                    <label for="q10_b">Ravenclaw</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_c" name="q10" value="dogru">
+                    <label for="q10_c">Hufflepuff</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q10_d" name="q10">
+                    <label for="q10_d">Slytherin</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. Harry Dobby'e ne vererek onun özgür olmasını sağladı?</h3>
+             <img src="harry resim/11.gif" alt="Dobby" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_a" name="q11">
+                    <label for="q11_a">Eldiven</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_b" name="q11">
+                    <label for="q11_b">Şapka</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_c" name="q11" value="dogru">
+                    <label for="q11_c">Çorap</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q11_d" name="q11">
+                    <label for="q11_d">Fular</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. Horcrux yaratımındaki en karanlık unsur nedir?</h3>
+             <img src="harry resim/12.jpeg" alt="Horcrux" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_a" name="q12">
+                    <label for="q12_a">Ruh çağırma</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_b" name="q12">
+                    <label for="q12_b">Ölüm yiyen ritüeli</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_c" name="q12" value="dogru">
+                    <label for="q12_c">Cinayetle ruhun parçalanması</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q12_d" name="q12">
+                    <label for="q12_d">Seviyeli iksir</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. Hogwarts Ekspresi hangi perondan kalkar?</h3>
+             <img src="harry resim/13.gif" alt="Hogwarts Ekspresi" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_a" name="q13">
+                    <label for="q13_a">9</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_b" name="q13">
+                    <label for="q13_b">10</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_c" name="q13" value="dogru">
+                    <label for="q13_c">9 ¾</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q13_d" name="q13">
+                    <label for="q13_d">8 ½</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. Snape'in "Always (Her zaman)" sözü hangi büyü teorisine gönderme yapar?</h3>
+             <img src="harry resim/14.jpeg" alt="Snape" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_a" name="q14">
+                    <label for="q14_a">Mana Teorisi</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_b" name="q14" value="dogru">
+                    <label for="q14_b">Patronus'un duygusal sabitlik teorisi</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_c" name="q14">
+                    <label for="q14_c">Aşk Büyüsü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q14_d" name="q14">
+                    <label for="q14_d">Karanlık büyü</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Hermione, Polyjuice Potion yaparken hangi hayvana dönüşüp hata yaptı?</h3>
+
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_a" name="q15">
+                    <label for="q15_a">Baykuş</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_b" name="q15" value="dogru">
+                    <label for="q15_b">Kedi</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_c" name="q15">
+                    <label for="q15_c">Fare</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q15_d" name="q15">
+                    <label for="q15_d">Gelincik</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. Draco Malfoy'un annesinin adı nedir?</h3>
+             <img src="harry resim/16.jpeg" alt="Malfoy ailesi" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_a" name="q16" value="dogru">
+                    <label for="q16_a">Narcissa</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_b" name="q16">
+                    <label for="q16_b">Helena</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_c" name="q16">
+                    <label for="q16_c">Andromeda</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q16_d" name="q16">
+                    <label for="q16_d">Bellatrix</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. Harry'nin vaftiz babası kimdir?</h3>
+             <img src="harry resim/17.gif" alt="Harry'in vaftiz babası" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_a" name="q17">
+                    <label for="q17_a">Remus Lupin</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_b" name="q17" value="dogru">
+                    <label for="q17_b">Sirius Black</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_c" name="q17">
+                    <label for="q17_c">Severus Snape</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q17_d" name="q17">
+                    <label for="q17_d">Arthur Weasley</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. "Üç Kardeşin Hikayesi"nde ölüm figürünün sembolik anlamı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_a" name="q18">
+                    <label for="q18_a">İllüzyon büyüsü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_b" name="q18" value="dogru">
+                    <label for="q18_b">Ölümün kendisi değil, yazgı/kaderdir</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_c" name="q18">
+                    <label for="q18_c">Kaçınılmaz son değil, karanlık büyüdür</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q18_d" name="q18">
+                    <label for="q18_d">Dumbledore'un alegorisidir</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. Ron'un en büyük korkusu nedir?</h3>
+             <img src="harry resim/19.jpeg" alt="Ron" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_a" name="q19">
+                    <label for="q19_a">Karanlık</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_b" name="q19" value="dogru">
+                    <label for="q19_b">Örümcekler</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_c" name="q19">
+                    <label for="q19_c">Yükseklik</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q19_d" name="q19">
+                    <label for="q19_d">Su</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. Kehanette Voldemort'a karşı koyacak 2 çocuk kimlerdi?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_a" name="q20" value="dogru">
+                    <label for="q20_a">Harry - Neville</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_b" name="q20">
+                    <label for="q20_b">Harry - Draco</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_c" name="q20">
+                    <label for="q20_c">Harry - Ron</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q20_d" name="q20">
+                    <label for="q20_d">James - Sirius</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>21. Marvolo Gaunt'un yüzüğü hangi lanetle korunuyordu?</h3>
+             <img src="harry resim/21.jpg" alt="Marvolo Gaunt yüzüğü" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q21_a" name="q21">
+                    <label for="q21_a">Sectumsempra</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q21_b" name="q21" value="dogru">
+                    <label for="q21_b">Curse of the Horcrux</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q21_c" name="q21">
+                    <label for="q21_c">Killing Curse</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q21_d" name="q21">
+                    <label for="q21_d">Protego Maxima</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>22. Hermione'nin kedisinin adı nedir?</h3>
+             <img src="harry resim/22.jpeg" alt="Hermione ve kedisi" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q22_a" name="q22">
+                    <label for="q22_a">Scabbers</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q22_b" name="q22" value="dogru">
+                    <label for="q22_b">Crookshanks</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q22_c" name="q22">
+                    <label for="q22_c">Fang</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q22_d" name="q22">
+                    <label for="q22_d">Norbert</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>23. Gringotts'ta Bellatrix Lestrange'in sakladığı horcrux hangi odadaydı?</h3>
+             <img src="harry resim/23.gif" alt="Bellatrix gif" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q23_a" name="q23" value="dogru">
+                    <label for="q23_a">493</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q23_b" name="q23">
+                    <label for="q23_b">687</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q23_c" name="q23">
+                    <label for="q23_c">711</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q23_d" name="q23">
+                    <label for="q23_d">624</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>24. Dobby hangi tür yaratıktır?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q24_a" name="q24">
+                    <label for="q24_a">Goblin</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q24_b" name="q24" value="dogru">
+                    <label for="q24_b">Ev cini</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q24_c" name="q24">
+                    <label for="q24_c">Trol</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q24_d" name="q24">
+                    <label for="q24_d">Kappa</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>25. Harry'nin Snitch'i ilk açtığında neden açılmadı?</h3>
+             <img src="harry resim/25.gif" alt="Snitch" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q25_a" name="q25">
+                    <label for="q25_a">Kan teması gerekiyordu</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q25_b" name="q25">
+                    <label for="q25_b">Snitch bozuktu</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q25_c" name="q25" value="dogru">
+                    <label for="q25_c">Dudakla temas lazımdı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q25_d" name="q25">
+                    <label for="q25_d">Patronus enerjisi gerekliydi</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>26. Hogwarts'a giriş mektubunu Harry kimden aldı?</h3>
+             <img src="harry resim/26.jpg" alt="Hogwarts giriş mektubu" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q26_a" name="q26">
+                    <label for="q26_a">Dumbledore</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q26_b" name="q26">
+                    <label for="q26_b">McGonagall</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q26_c" name="q26" value="dogru">
+                    <label for="q26_c">Hagrid</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q26_d" name="q26">
+                    <label for="q26_d">Sirius</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>27. Grindelwald Mürver Asa'yı çalmadan önce ne üzerinde çalışıyordu?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q27_a" name="q27" value="dogru">
+                    <label for="q27_a">Kırılmaz Asa</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q27_b" name="q27">
+                    <label for="q27_b">Güç aktarımı</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q27_c" name="q27">
+                    <label for="q27_c">Karanlık çekirdekler</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q27_d" name="q27">
+                    <label for="q27_d">Krallık büyüleri</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>28. Voldemort'un ilk horcrux'u hangisidir?</h3>
+             <img src="harry resim/28.jpeg" alt="Voldemort ve Harry" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q28_a" name="q28">
+                    <label for="q28_a">Nagini</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q28_b" name="q28">
+                    <label for="q28_b">Hufflepuff kupası</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q28_c" name="q28">
+                    <label for="q28_c">Marvolo'nun yüzüğü</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q28_d" name="q28" value="dogru">
+                    <label for="q28_d">Günlük</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>29. Sırlar Odası ilk açıldığında kim ölmüştü?</h3>
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q29_a" name="q29" value="dogru">
+                    <label for="q29_a">Mızmız Myrtle</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q29_b" name="q29">
+                    <label for="q29_b">Pomona Sprout</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q29_c" name="q29">
+                    <label for="q29_c">Lavender Brown</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q29_d" name="q29">
+                    <label for="q29_d">Dean Thomas</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>30. Molly Weasley'nin Ron'a her yıl verdiği klasik hediye nedir?</h3>
+             <img src="harry resim/30.gif" alt="Molly Weasley" style="width: 750px; height: 400px;">
+            <form>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q30_a" name="q30">
+                    <label for="q30_a">Büyülü Şeker</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q30_b" name="q30">
+                    <label for="q30_b">Uçan Şal</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q30_c" name="q30" value="dogru">
+                    <label for="q30_c">Elden örülme kazak</label>
+                </div>
+                <div class="sik-kapsayici">
+                    <input type="radio" id="q30_d" name="q30">
+                    <label for="q30_d">Tılsımlı Atkı</label>
+                </div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 SONUÇ EKRANI</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+            
+        </div>
+
+    </div> 
+
+
+
+
+    <script>
+        function testiBitir() {
+        let dogruSayisi = 0;
+        let yanlisSayisi = 0;
+        let bosSayisi = 0;
+        const soruPuani = 5; 
+        
+        const sorular = document.querySelectorAll('form'); 
+        
+        sorular.forEach((form) => {
+            const secilen = form.querySelector('input[type="radio"]:checked');
+            const etiketler = form.querySelectorAll('label');
+            
+            etiketler.forEach(lbl => {
+                lbl.style.color = "#ecf0f1"; 
+                lbl.style.fontWeight = "normal";
+            });
+
+            if (secilen) {
+                if (secilen.value === "dogru") {
+                    dogruSayisi++;
+                    const label = form.querySelector(`label[for="${secilen.id}"]`);
+                    label.style.color = "#2ecc71"; 
+                    label.style.fontWeight = "bold";
+                    label.innerHTML += " ✅"; 
+                } else {
+                    yanlisSayisi++;
+                    const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                    yanlisLabel.style.color = "#e74c3c"; 
+                    yanlisLabel.style.fontWeight = "bold";
+                    yanlisLabel.innerHTML += " ❌"; 
+
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#2ecc71";
+                        dogruLabel.style.fontWeight = "bold";
+                        dogruLabel.innerHTML += " (Doğru Cevap)";
+                    }
+                }
+            } else {
+                bosSayisi++;
+                const dogruInput = form.querySelector('input[value="dogru"]');
+                if(dogruInput) {
+                    const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                    dogruLabel.style.color = "#f39c12"; 
+                    dogruLabel.innerHTML += " (Boş Bıraktın)";
+                }
+            }
+        });
+
+        const toplamPuan = dogruSayisi * soruPuani;
+        const sonucKutusu = document.getElementById("sonuc-kutusu");
+        const puanYazisi = document.getElementById("puan-yazisi");
+        const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+        const mesaj = document.getElementById("mesaj");
+
+        sonucKutusu.style.display = "block";
+        
+        // --- GÜNCELLEME BURADA ---
+        puanYazisi.innerHTML = `
+            Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+            Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+            Boş Sayısı: <strong>${bosSayisi}</strong>
+            <br><br>
+            <button onclick="window.scrollTo(0,0); window.location.reload();" class="bitir-butonu" style="margin-top: 10px; width: auto; padding: 10px 30px; font-size: 16px;">
+                🔄 Testi Tekrar Çöz
+            </button>
+        `;
+        // -------------------------
+
+        toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+        if (toplamPuan === 100) {
+            mesaj.innerHTML = "MÜKEMMEL! Konuya tamamen hakimsin! 🏆";
+            mesaj.style.color = "#2ecc71";
+        } else if (toplamPuan >= 80) {
+            mesaj.innerHTML = "Harika iş çıkardın! Çok az eksiğin var. 👏";
+            mesaj.style.color = "#3498db";
+        } else if (toplamPuan >= 50) {
+            mesaj.innerHTML = "Fena değil, ama biraz daha tekrar yapmalısın. 😊";
+            mesaj.style.color = "#f39c12";
+        } else {
+            mesaj.innerHTML = "Sanırım konuyu biraz daha çalışman gerekiyor. Pes etme! 💪";
+            mesaj.style.color = "#e74c3c";
+        }
+
+        sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+    }
+        function acKapaMenu(){
+            var m=document.getElementById("yanMenu"); 
+            if(m.style.width==="300px") m.style.width="0"; else m.style.width="300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+</html>
+
+
+
+
+

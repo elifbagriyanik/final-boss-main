@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - Test Dünyası</title>
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* SAYFAYI DÜZENLEYEN ANA YAPI (Footer'ı aşağı iter) */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Ana Kapsayıcı */
+        .hakkimizda-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px 40px 20px; /* Başlık Navbar'dan 60px aşağıda başlar */
+            flex: 1; /* İçeriği genişletir, footer'ı dibe iter */
+        }
+
+        .sayfa-baslik {
+            text-align: center;
+            font-size: 2.5em;
+            color: var(--highlight-color);
+            margin-top: 20px; /* Başlık bir tık daha aşağıda */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .sayfa-aciklama {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--text-muted);
+        }
+
+        /* İki Kutulu Düzen */
+        .iki-kolon {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+
+        .bilgi-kutusu {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--footer-block-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .bilgi-kutusu:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .bilgi-kutusu h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        /* Teknolojiler */
+        .teknoloji-listesi { display: flex; flex-direction: column; gap: 15px; }
+        .tekno-item { display: flex; align-items: center; gap: 15px; background: rgba(255, 255, 255, 0.05); padding: 10px 15px; border-radius: 8px; font-weight: bold; }
+        .tekno-item i { font-size: 24px; width: 30px; text-align: center; }
+        .fa-html5 { color: #e34c26; } .fa-css3-alt { color: #264de4; } .fa-js { color: #f0db4f; } .fa-font-awesome { color: #339af0; } .fa-palette { color: #ff9f43; }
+
+        /* İletişim Listesi (Kutu içi) */
+        .iletisim-listesi { list-style: none; padding: 0; text-align: center; }
+        .iletisim-listesi li { margin-bottom: 20px; }
+        .iletisim-baslik { font-size: 1.2em; color: var(--text-color); margin-bottom: 5px; font-weight: bold; display: block; }
+        .sosyal-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--surface-color); color: var(--text-color); border-radius: 50%; margin: 0 5px; text-decoration: none; transition: 0.3s; font-size: 18px; }
+        .sosyal-btn:hover { background: var(--accent-color); color: white; transform: scale(1.1); }
+
+        /* FOOTER (Orijinal Tasarım ve Tüm İçerik) */
+        footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+        .footer-icerik { display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 8px; padding: 0 10px; }
+        .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 8px; border-radius: 4px; text-align: center; }
+        .footer-blok h3 { color: var(--highlight-color); margin: 0 0 6px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); padding-bottom: 3px; white-space: nowrap; }
+        .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; }
+        .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; white-space: nowrap; }
+        .iletisim-link:hover { color: var(--text-color); }
+        .renkli-ikon { width: 24px; height: 24px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--text-color); text-decoration: none; }
+        .renkli-ikon:hover { transform: scale(1.1); }
+        .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; } .fa-envelope { color: #f1c40f; }
+        .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 10px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+        @media screen and (max-width: 768px) { .footer-blok { min-width: 100px; } }
+    </style>
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script> 
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+        <div class="hesap-alani">
+            <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../pages/turk-dizi/turk_dizi_ana.html">Türk Dizileri</a>
+        <a href="../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../pages/harry_potter/harry.html">Harry Potter</a>
+        <a href="../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+        
+    </div>
+
+    <div class="hakkimizda-container">
+        <h1 class="sayfa-baslik">Hakkımızda</h1>
+        <p class="sayfa-aciklama">Test Dünyası projesinin arkasındaki teknolojiler ve ekip.</p>
+
+        <div class="iki-kolon">
+            <div class="bilgi-kutusu">
+                <h2>💻 Geliştirme Araçları</h2>
+                <div class="teknoloji-listesi">
+                    <div class="tekno-item"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+                    <div class="tekno-item"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+                    <div class="tekno-item"><i class="fa-brands fa-js"></i> <span>JavaScript</span></div>
+                    <div class="tekno-item"><i class="fa-solid fa-palette"></i> <span>Canva</span></div>
+                </div>
+            </div>
+
+            <div class="bilgi-kutusu">
+                <h2>📬 İletişim & Yapımcılar</h2>
+                <ul class="iletisim-listesi">
+                    <li>
+                        <span class="iletisim-baslik">ELİF </span>
+                        <a href="mailto:bagriyanikelif16@gmail.com" class="sosyal-btn"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/905551111111" class="sosyal-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/elifbagriyani" class="sosyal-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 20px 0;">
+                    <li>
+                        <span class="iletisim-baslik">TAYLAN</span>
+                        <a href="mailto:ayse@mail.com" class="sosyal-btn"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://wa.me/905552222222" class="sosyal-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/taylan_tcr7" class="sosyal-btn"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-icerik">
+            <div class="footer-blok">
+                <h3>Hızlı Erişim</h3>
+                <div class="yatay-dizilis">
+                    <a href="../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                    <a href="../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                    <a href="../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                    <a href="../pages/turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+                </div>
+            </div>
+            <div class="footer-blok">
+                <h3>ELİF</h3>
+                <div class="yatay-dizilis">
+                    <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://wa.me/905551111111" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/elifbagriyani" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/ElifBagriyanik2" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-blok">
+                <h3>TAYLAN</h3>
+                <div class="yatay-dizilis">
+                    <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/taylan_tcr7" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="telif-mini"> &copy; 2025 Test Dünyası </div>
+    </footer>
+
+    <script>
+        function acKapaMenu() {
+            var menu = document.getElementById("yanMenu");
+            menu.style.width = (menu.style.width === "300px") ? "0" : "300px";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return;
+            const icon = themeBtn.querySelector("i");
+            
+            window.toggleTheme = function () {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                if (icon) {
+                    if (isLight) { icon.classList.replace("fa-sun", "fa-moon"); localStorage.setItem("theme", "light"); } 
+                    else { icon.classList.replace("fa-moon", "fa-sun"); localStorage.setItem("theme", "dark"); }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

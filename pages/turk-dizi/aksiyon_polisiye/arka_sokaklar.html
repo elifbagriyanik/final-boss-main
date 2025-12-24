@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arka Sokaklar Testi</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <script>
+        (function () {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch (e) { }
+        })();
+    </script>
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i
+                    class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+
+
+    <div class="test-kapsayici">
+        <h1><strong>🚓 Arka Sokaklar</strong></h1>
+        <p class="alt-baslik">"Merkez 45-40, olay yerine intikal ediyoruz!" Rıza Baba'nın ekibine girebilir misin?</p>
+
+        <div class="soru-karti">
+            <h3>1. Ekibin başındaki, "Baba" lakaplı emniyet amiri kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"><label for="q1_a">Hüsnü Çoban</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"><label for="q1_b">Rıza
+                        Soylu</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"><label for="q1_c">Mesut
+                        Güneri</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"><label for="q1_d">Engin
+                        Balkan</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. Ekibin telsiz kodu (Rıza Baba'nın anons ettiği) nedir?</h3>
+
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2" value="dogru"><label
+                        for="q2_a">45-40</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2"><label for="q2_b">34-12</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"><label for="q2_c">55-10</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"><label for="q2_d">01-01</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. "Odun" lakaplı, sert ama yufka yürekli komiser kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"><label for="q3_a">Hüsnü</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3"><label for="q3_b">Ali</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3" value="dogru"><label
+                        for="q3_c">Mesut</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"><label for="q3_d">Murat</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. Hüsnü Çoban'ın karısı, "Hüsnüüü!" diye bağırmasıyla meşhur olan kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4"><label for="q4_a">Nazike</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4" value="dogru"><label
+                        for="q4_b">Suat</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"><label for="q4_c">Esra</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"><label for="q4_d">Zeliha</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. Ekibin keskin nişancısı olan ve Rıza Baba'nın kızıyla evlenen kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"><label for="q5_a">Murat</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"><label
+                        for="q5_b">Ali</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"><label for="q5_c">Hakan</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"><label for="q5_d">Arda</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. Arka Sokaklar ekibinin kullandığı o efsanevi araç nedir?</h3>
+
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6"><label for="q6_a">Siyah
+                        Mersedes</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6" value="dogru"><label for="q6_b">Beyaz
+                        Minibüs (Transit)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"><label for="q6_c">Polis
+                        Motoru</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"><label for="q6_d">Helikopter</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. Mesut Komiser'in köpeğinin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7"><label for="q7_a">Karabaş</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7"><label for="q7_b">Dost</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7" value="dogru"><label
+                        for="q7_c">Garip</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"><label for="q7_d">Gölge</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. Hüsnü Çoban'ın çocuklarından gazeteci olan kızı kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8"><label for="q8_a">Tekin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8"><label for="q8_b">Metin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8" value="dogru"><label
+                        for="q8_c">Zeliha (Zeliş)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"><label for="q8_d">Şule</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. Mesut'un oğlu olan, büyüyüp polis olan karakter kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9" value="dogru"><label
+                        for="q9_a">Tunç</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9"><label for="q9_b">Metin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"><label for="q9_c">Tekin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"><label for="q9_d">Yiğit</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. Ekibin bilişim uzmanı, bilgisayar başındaki kadın komiseri kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10" value="dogru"><label
+                        for="q10_a">Aylin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10"><label for="q10_b">Bahar</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"><label for="q10_c">Selin</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"><label for="q10_d">Hande</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. Hüsnü Çoban'ın evindeki komik teyze, Suat'ın teyzesi kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"><label for="q11_a">Şükran</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11" value="dogru"><label
+                        for="q11_b">Nazike</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11"><label for="q11_c">Leman</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"><label for="q11_d">Hayriye</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. Rıza Baba'nın kızı ve Ali'nin eşi olan karakter kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12" value="dogru"><label
+                        for="q12_a">Pınar</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12"><label for="q12_b">Zeynep</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"><label for="q12_c">Elif</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"><label for="q12_d">Melek</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. Dizinin geçtiği, Rıza Baba ve ekibinin sorumlu olduğu bölge neresidir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13"><label for="q13_a">Beşiktaş</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"><label for="q13_b">Kadıköy</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13" value="dogru"><label
+                        for="q13_c">Asayiş Şube</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"><label for="q13_d">Beyoğlu</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. Mesut Komiser nerelidir? (Şivesinden bellidir).</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"><label for="q14_a">Trabzon</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14"><label
+                        for="q14_b">Diyarbakır</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"><label for="q14_c">Adana</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14" value="dogru"><label
+                        for="q14_d">Erzurum</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Hüsnü Çoban, çocuklarına kızdığında hangi hayvan ismini kullanır?</h3>
+
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"><label
+                        for="q15_a">Eşşek sıpaları</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"><label for="q15_b">İt oğlu
+                        itler</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"><label for="q15_c">Tosbalar</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"><label
+                        for="q15_d">Aslanlarım</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. Ekibe sonradan katılan, Mesut'la didişen ama sonra aşık olan kadın komiser kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16" value="dogru"><label
+                        for="q16_a">Selin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16"><label for="q16_b">Bahar</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"><label for="q16_c">Leyla</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"><label for="q16_d">Ece</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. Dizinin en uzun süre "öldü sanılıp" geri dönen karakteri kimdir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17"><label for="q17_a">Rıza
+                        Baba</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17" value="dogru"><label
+                        for="q17_b">Hüsnü Çoban</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"><label for="q17_c">Engin
+                        Müdür</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"><label for="q17_d">Ali</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. Hüsnü Çoban'ın oğullarından hangisi "dizi oyuncusu" olmaya çalışmıştır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"><label for="q18_a">Metin</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18" value="dogru"><label
+                        for="q18_b">Tekin</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"><label for="q18_c">Tunç</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"><label for="q18_d">Haydar</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. Engin Komiser (sonra Müdür), ekibin neresinde görev yapar genelde?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19"><label for="q19_a">Sahada</label>
+                </div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19" value="dogru"><label
+                        for="q19_b">Masa başında / Rıza Baba'nın yardımcısı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"><label for="q19_c">Gizli
+                        görevde</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"><label for="q19_d">Trafikte</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. Arka Sokaklar dizisinin en bilinen özelliği nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20"><label for="q20_a">Çok kısa
+                        sürmesi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20"><label for="q20_b">Sürekli oyuncu
+                        değiştirmesi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20" value="dogru"><label for="q20_c">En
+                        uzun soluklu dizilerden biri olması</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"><label for="q20_d">Sadece komedi
+                        olması</label></div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        <div id="sonuc-kutusu" class="sonuc-kutusu"
+            style="display:none; margin-top:20px; padding:15px; border:2px solid var(--accent-color); border-radius:8px; background-color: var(--surface-color);">
+            <h2 id="toplam-puan-yazisi" style="text-align:center; color: var(--highlight-color);"></h2>
+            <div id="puan-yazisi" style="margin-top:10px; font-size:16px; line-height:1.5; color: var(--text-color);">
+            </div>
+            <div id="mesaj" style="margin-top:15px; font-size:18px; font-weight:bold; text-align:center;"></div>
+        </div>
+
+
+        <!-- DYNAMIC FOOTER START -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+            footer {
+                background-color: var(--footer-bg);
+                color: var(--text-color);
+                padding: 10px 0;
+                font-family: 'Segoe UI', sans-serif;
+                border-top: 2px solid var(--accent-color);
+                font-size: 11px;
+            }
+
+            .footer-icerik {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin: 0 auto;
+                gap: 5px;
+                padding: 0 10px;
+            }
+
+            .footer-blok {
+                flex: 1;
+                min-width: 180px;
+                background: var(--footer-block-bg);
+                padding: 5px;
+                border-radius: 4px;
+                text-align: center;
+            }
+
+            .footer-blok h3 {
+                color: var(--highlight-color);
+                margin: 0 0 5px 0;
+                font-size: 12px;
+                text-transform: uppercase;
+                display: block;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .yatay-dizilis {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .iletisim-link {
+                display: inline-flex;
+                align-items: center;
+                color: var(--text-muted);
+                text-decoration: none;
+                transition: 0.2s;
+                gap: 3px;
+            }
+
+            .iletisim-link:hover {
+                color: var(--text-color);
+            }
+
+            .renkli-ikon {
+                width: 22px;
+                height: 22px;
+                background: var(--surface-color);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 10px;
+                color: var(--text-color);
+                text-decoration: none;
+            }
+
+            .renkli-ikon:hover {
+                transform: scale(1.1);
+            }
+
+            .fa-instagram {
+                color: #E1306C;
+            }
+
+            .fa-whatsapp {
+                color: #25D366;
+            }
+
+            .fa-x-twitter {
+                color: var(--text-color);
+            }
+
+            .fa-youtube {
+                color: #FF0000;
+            }
+
+            .telif-mini {
+                width: 100%;
+                text-align: center;
+                font-size: 10px;
+                color: var(--text-muted);
+                margin-top: 5px;
+                padding-top: 5px;
+                border-top: 1px solid var(--border-color);
+            }
+        </style>
+        <footer>
+            <div class="footer-icerik">
+                <div class="footer-blok">
+                    <h3>Hızlı Erişim</h3>
+                    <div class="yatay-dizilis">
+                        <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                        <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                        <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                        <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+                    </div>
+                </div>
+                <div class="footer-blok">
+                    <h3>ELİF</h3>
+                    <div class="yatay-dizilis">
+                        <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i
+                                class="fa-solid fa-envelope"></i> Mail</a>
+                        <a href="https://wa.me/905551111111" target="_blank" class="iletisim-link"><i
+                                class="fa-brands fa-whatsapp"></i> WP</a>
+                        <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank"
+                            class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-blok">
+                    <h3>TAYLAN</h3>
+                    <div class="yatay-dizilis">
+                        <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i
+                                class="fa-solid fa-envelope"></i> Mail</a>
+                        <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i
+                                class="fa-brands fa-whatsapp"></i> WP</a>
+                        <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank"
+                            class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="telif-mini">
+                &copy; 2025 Test Dünyası
+            </div>
+        </footer>
+        <!-- DYNAMIC FOOTER END -->
+
+
+        <script>
+            function testiBitir() {
+                let dogruSayisi = 0;
+                let yanlisSayisi = 0;
+                let bosSayisi = 0;
+                const soruPuani = 5;
+
+                const sorular = document.querySelectorAll('form');
+
+                sorular.forEach((form) => {
+                    const secilen = form.querySelector('input[type="radio"]:checked');
+                    const etiketler = form.querySelectorAll('label');
+
+                    etiketler.forEach(lbl => {
+                        lbl.style.color = "#ecf0f1";
+                        lbl.style.fontWeight = "normal";
+                    });
+
+                    if (secilen) {
+                        if (secilen.value === "dogru") {
+                            dogruSayisi++;
+                            const label = form.querySelector(`label[for="${secilen.id}"]`);
+                            label.style.color = "#2ecc71";
+                            label.style.fontWeight = "bold";
+                            label.innerHTML += " ✅";
+                        } else {
+                            yanlisSayisi++;
+                            const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                            yanlisLabel.style.color = "#e74c3c";
+                            yanlisLabel.style.fontWeight = "bold";
+                            yanlisLabel.innerHTML += " ❌";
+
+                            const dogruInput = form.querySelector('input[value="dogru"]');
+                            if (dogruInput) {
+                                const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                                dogruLabel.style.color = "#2ecc71";
+                                dogruLabel.style.fontWeight = "bold";
+                                dogruLabel.innerHTML += " (Doğru Cevap)";
+                            }
+                        }
+                    } else {
+                        bosSayisi++;
+                        const dogruInput = form.querySelector('input[value="dogru"]');
+                        if (dogruInput) {
+                            const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                            dogruLabel.style.color = "#f39c12";
+                            dogruLabel.innerHTML += " (Boş Bıraktın)";
+                        }
+                    }
+                });
+
+                const toplamPuan = dogruSayisi * soruPuani;
+                const sonucKutusu = document.getElementById("sonuc-kutusu");
+                const puanYazisi = document.getElementById("puan-yazisi");
+                const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+                const mesaj = document.getElementById("mesaj");
+
+                sonucKutusu.style.display = "block";
+
+                // --- GÜNCELLEME BURADA ---
+                puanYazisi.innerHTML = `
+            Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+            Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+            Boş Sayısı: <strong>${bosSayisi}</strong>
+            <br><br>
+            <button onclick="window.scrollTo(0,0); window.location.reload();" class="bitir-butonu" style="margin-top: 10px; width: auto; padding: 10px 30px; font-size: 16px;">
+                🔄 Testi Tekrar Çöz
+            </button>
+        `;
+                // -------------------------
+
+                toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+                if (toplamPuan === 100) {
+                    mesaj.innerHTML = "MÜKEMMEL! Konuya tamamen hakimsin! 🏆";
+                    mesaj.style.color = "#2ecc71";
+                } else if (toplamPuan >= 80) {
+                    mesaj.innerHTML = "Harika iş çıkardın! Çok az eksiğin var. 👏";
+                    mesaj.style.color = "#3498db";
+                } else if (toplamPuan >= 50) {
+                    mesaj.innerHTML = "Fena değil, ama biraz daha tekrar yapmalısın. 😊";
+                    mesaj.style.color = "#f39c12";
+                } else {
+                    mesaj.innerHTML = "Sanırım konuyu biraz daha çalışman gerekiyor. Pes etme! 💪";
+                    mesaj.style.color = "#e74c3c";
+                }
+
+                sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+            }
+            function acKapaMenu() { var m = document.getElementById("yanMenu"); if (m.style.width === "300px") m.style.width = "0"; else m.style.width = "300px"; }
+        </script>
+
+        <script>
+            // Theme Toggle Logic
+            // Check saved theme immediately to prevent flash
+            // Theme check moved
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const themeBtn = document.getElementById("theme-toggle");
+                const body = document.body;
+                if (!themeBtn) return; // Safety
+                const icon = themeBtn.querySelector("i");
+
+                // Update icon state based on current class
+                if (body.classList.contains("light-mode")) {
+                    if (icon) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                    }
+                }
+
+                window.toggleTheme = function () {
+                    body.classList.toggle("light-mode");
+                    const isLight = body.classList.contains("light-mode");
+
+                    if (icon) {
+                        if (isLight) {
+                            icon.classList.remove("fa-sun");
+                            icon.classList.add("fa-moon");
+                            localStorage.setItem("theme", "light");
+                        } else {
+                            icon.classList.remove("fa-moon");
+                            icon.classList.add("fa-sun");
+                            localStorage.setItem("theme", "dark");
+                        }
+                    }
+                }
+            });
+        </script>
+</body>
+
+</html>

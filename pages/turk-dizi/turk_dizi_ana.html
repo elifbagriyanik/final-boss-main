@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türk Dizileri</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <script>
+        (function () {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch (e) { }
+        })();
+    </script>
+
+    <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item" style="color: #e74c3c;">Türk Dizileri</a>
+            <a href="../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i
+                    class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../index.html"> Ana Sayfa</a>
+        <a href="../../pages/turk-dizi/turk_dizi_ana.html">Türk Dizileri</a>
+        <a href="../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../pages/yabanci_dizi/yabanci_dizi_ana.html">Yabancı Diziler</a>
+        <a href="../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+        
+    </div>
+
+    <div class="kategori-sayfasi">
+
+        <h1>📺 TÜRK DİZİ DÜNYASI</h1>
+        <p style="color: #ccc; margin-bottom: 30px;">En sevdiğin yerli dizilerin testlerini çöz, bilgini kanıtla!</p>
+
+        <div class="alt-kategori-baslik">DRAM</div>
+
+        <div class="dizi-listesi">
+
+            <a href="../../pages/turk-dizi/DRAM/aski_memnu.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/askımemnu.jpeg" alt="Aşkı memnu afişi">
+                </div>
+                <div class="kutu-isim">Aşk-ı Memnu</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/DRAM/Ezel.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/Ezel.jpg" alt="Ezel afiş">
+                </div>
+                <div class="kutu-isim">Ezel</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/DRAM/fatmagülün_sucu_ne.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/fatmagü.jpg" alt="Fatmagülün suçu ne afiş">
+                </div>
+                <div class="kutu-isim">Fatmagül'ün Suçu Ne?</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/DRAM/istanbullu_gelin.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/istanbullugelin.jpg" alt="istanbullu gelin afiş">
+                </div>
+                <div class="kutu-isim">İstanbullu Gelin</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/DRAM/öyle_bir_geçer_zaman.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/öylebir.jpg" alt="öyle bir geçer Zaman ki afiş">
+                </div>
+                <div class="kutu-isim">Öyle Bir Geçer Zaman Ki</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/DRAM/sen_anlat_karadeniz.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/sen anlat karadeniz.jpg" alt="sen anlat karadeniz afiş">
+                </div>
+                <div class="kutu-isim">Sen Anlat Karadeniz</div>
+            </a>
+
+        </div>
+
+        <div class="alt-kategori-baslik">AKSİYON & POLİSİYE</div>
+
+        <div class="dizi-listesi">
+
+            <a href="../../pages/turk-dizi/aksiyon_polisiye/arka_sokaklar.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/arka sokaklar.jpg" alt="arka sokaklar">
+                </div>
+                <div class="kutu-isim">Arka Sokaklar</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/aksiyon_polisiye/behzat_c.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/behzat.jpg" alt="behzat ç afiş">
+                </div>
+                <div class="kutu-isim">Behzat Ç.</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/aksiyon_polisiye/cukur.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/cukur.jpg" alt="çukur afiş">
+                </div>
+                <div class="kutu-isim">Çukur</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/aksiyon_polisiye/kurtlar_vadisi.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/kurtlarvadisi.jpeg" alt="kurtlar vadisi afişi">
+                </div>
+                <div class="kutu-isim">Kurtlar Vadisi</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/aksiyon_polisiye/soz.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/söz.jpg" alt="söz afiş">
+                </div>
+                <div class="kutu-isim">Söz</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/aksiyon_polisiye/teskilat.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/teskilat.jpeg" alt="teşkilat afişi">
+                </div>
+                <div class="kutu-isim">Teşkilat</div>
+            </a>
+
+        </div>
+
+        <div class="alt-kategori-baslik">KOMEDİ & ROMANTİK KOMEDİ</div>
+
+        <div class="dizi-listesi">
+
+            <a href="../../pages/turk-dizi/komedi_romantikKomedi/ask_mantık_intikam.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/askmantık.jpg" alt="aşk mantık intikam afiş">
+                </div>
+                <div class="kutu-isim">Aşk Mantık İntikam</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/komedi_romantikKomedi/avrupa_yakası.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/avrupa.jpg" alt="avrupa yakası afiş">
+                </div>
+                <div class="kutu-isim">Avrupa Yakası</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/komedi_romantikKomedi/cocuklar_duymasın.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/cocuklar.jpg" alt="çocuklar duymasın afiş">
+                </div>
+                <div class="kutu-isim">Çocuklar Duymasın</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/komedi_romantikKomedi/genis_aile.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/genisaile.jpg" alt="geniş Aile afiş">
+                </div>
+                <div class="kutu-isim">Geniş Aile</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/komedi_romantikKomedi/kiralık_ask.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/kiralıkask.jpeg" alt="Kiralık aşk afişi">
+                </div>
+                <div class="kutu-isim">Kiralık Aşk</div>
+            </a>
+
+            <a href="../../pages/turk-dizi/komedi_romantikKomedi/yalan_dunya.html" class="dizi-kutu">
+                <div class="kutu-gorsel">
+                    <img src="../../assets/img/afis-resimleri/yalandunya.jpg" alt="yalan dünya afiş">
+                </div>
+                <div class="kutu-isim">Yalan Dünya</div>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function acKapaMenu() {
+            var m = document.getElementById("yanMenu");
+            if (m.style.width === "300px") m.style.width = "0"; else m.style.width = "300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                if (icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                }
+            }
+
+            window.toggleTheme = function () {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+</body>
+
+</html>

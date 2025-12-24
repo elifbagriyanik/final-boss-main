@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Mirror Testi</title>
+    
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        (function() {
+            try {
+                var s = localStorage.getItem("theme");
+                if (s === "light") { document.body.classList.add("light-mode"); }
+            } catch(e) {}
+        })();
+    </script>
+
+      <div class="navbar">
+        <div class="menu-ikonu" onclick="acKapaMenu()">&#9776;</div>
+        
+        <div class="nav-links">
+            <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+            <a href="../../../pages/turk-dizi/turk_dizi_ana.html" class="nav-item">Türk Dizileri</a>
+            <a href="../../../pages/cizgi_film/cizgi_film_ana.html" class="nav-item">Çizgi Filmler</a>
+            <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html" class="nav-item">Yabancı Diziler</a>
+            <a href="../../../pages/anime/anıme_ana.html" class="nav-item">Anime</a>
+            <a href="../../../pages/harry_potter/harry.html" class="nav-item">Harry Potter</a>
+            <a href="../../../pages/marvel/marvel_ana.html" class="nav-item">Marvel</a>
+        </div>
+
+        <div class="hesap-alani"><button id="theme-toggle" class="theme-btn" onclick="toggleTheme()"><i class="fas fa-sun"></i></button>
+        </div>
+    </div>
+
+    <div id="yanMenu" class="yan-menu">
+        <a href="javascript:void(0)" class="kapat-btn" onclick="acKapaMenu()">&times;</a>
+        <div class="menu-baslik-buyuk">TEST KATEGORİLERİ</div>
+        <a href="../../../index.html" class="nav-item">Ana Sayfa</a>
+        <a href="../../../pages/turk-dizi/turk_dizi_ana.html"> Türk Dizileri</a>
+        <a href="../../../pages/cizgi_film/cizgi_film_ana.html"> Çizgi Filmler</a>
+        <a href="../../../pages/yabanci_dizi/yabanci_dizi_ana.html"> Yabancı Diziler</a>
+        <a href="../../../pages/anime/anıme_ana.html"> Anime</a>
+        <a href="../../../pages/harry_potter/harry.html"> Harry Potter</a>
+        <a href="../../../pages/marvel/marvel_ana.html"> Marvel</a>
+        <div class="menu-baslik-kucuk">Diğer</div>
+        <a href="../../../pages/hakkimizda.html">ℹ️ Hakkımızda</a>
+    </div>
+
+    
+
+    <div class="test-kapsayici">
+        
+        <h1><strong>📱 Black Mirror Bilgi Testi</strong></h1>
+        <p class="alt-baslik">"Teknoloji seni izliyor..." Bakalım distopik geleceğe ne kadar hazırsın?</p>
+
+        <div class="soru-karti">
+            <h3>1. Black Mirror dizisinin türü/formatı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q1_a" name="q1"><label for="q1_a">Devamlı hikaye</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_b" name="q1" value="dogru"><label for="q1_b">Antoloji (Her bölüm farklı hikaye)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_c" name="q1"><label for="q1_c">Belgesel</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q1_d" name="q1"><label for="q1_d">Sitcom</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>2. 'Nosedive' bölümünde insanların sosyal statüsü neye göre belirlenir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q2_a" name="q2"><label for="q2_a">Paralarına göre</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_b" name="q2" value="dogru"><label for="q2_b">Başkalarından aldıkları 5 üzerinden puanlara göre</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_c" name="q2"><label for="q2_c">Zekalarına göre</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q2_d" name="q2"><label for="q2_d">Güzelliklerine göre</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>3. 'San Junipero' bölümündeki teknoloji ne işe yarar?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q3_a" name="q3"><label for="q3_a">Zaman yolculuğu</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_b" name="q3" value="dogru"><label for="q3_b">Ölülerin veya yaşlıların bilinçlerini bir bulut simülasyonuna aktarmak</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_c" name="q3"><label for="q3_c">Hafıza silmek</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q3_d" name="q3"><label for="q3_d">Rüyaları kaydetmek</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>4. İzleyicinin kendi kararlarını vererek hikayeyi yönlendirdiği interaktif Black Mirror filminin adı nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q4_a" name="q4" value="dogru"><label for="q4_a">Bandersnatch</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_b" name="q4"><label for="q4_b">White Christmas</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_c" name="q4"><label for="q4_c">Metalhead</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q4_d" name="q4"><label for="q4_d">Playtest</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>5. İlk bölüm olan 'The National Anthem'da Başbakan prensesi kurtarmak için ne yapmaya zorlanır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q5_a" name="q5"><label for="q5_a">İstifa etmeye</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_b" name="q5" value="dogru"><label for="q5_b">Canlı yayında bir domuzla ilişkiye girmeye</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_c" name="q5"><label for="q5_c">Tüm servetini bağışlamaya</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q5_d" name="q5"><label for="q5_d">Birini öldürmeye</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>6. 'White Christmas' bölümünde insanların dijital kopyalarına verilen isim nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q6_a" name="q6" value="dogru"><label for="q6_a">Cookie (Kurabiye)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_b" name="q6"><label for="q6_b">Clone</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_c" name="q6"><label for="q6_c">Sim</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q6_d" name="q6"><label for="q6_d">Ghost</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>7. 'The Entire History of You' bölümünde insanların anılarını kaydedip tekrar izlemelerini sağlayan implant nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q7_a" name="q7" value="dogru"><label for="q7_a">The Grain</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_b" name="q7"><label for="q7_b">The Eye</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_c" name="q7"><label for="q7_c">The Chip</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q7_d" name="q7"><label for="q7_d">Memory Stick</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>8. 'Shut Up and Dance' bölümünde karakterler neden şantaja uğrar?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q8_a" name="q8"><label for="q8_a">Banka soydukları için</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_b" name="q8" value="dogru"><label for="q8_b">Web kameralarından uygunsuz görüntüleri kaydedildiği için</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_c" name="q8"><label for="q8_c">Cinayet işledikleri için</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q8_d" name="q8"><label for="q8_d">Hükümet sırlarını bildikleri için</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>9. 'Fifteen Million Merits' bölümünde insanlar enerji üretmek için ne yapar?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q9_a" name="q9"><label for="q9_a">Koşu bandında koşarlar</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_b" name="q9" value="dogru"><label for="q9_b">Bisiklet sürerler</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_c" name="q9"><label for="q9_c">Ağırlık kaldırırlar</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q9_d" name="q9"><label for="q9_d">Dans ederler</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>10. 'Metalhead' bölümündeki katil robot köpekler hangi gerçek şirketin robotlarına benzemektedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q10_a" name="q10" value="dogru"><label for="q10_a">Boston Dynamics</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_b" name="q10"><label for="q10_b">Tesla</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_c" name="q10"><label for="q10_c">NASA</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q10_d" name="q10"><label for="q10_d">Google</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>11. 'USS Callister' bölümündeki kaptan gerçek hayatta nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q11_a" name="q11"><label for="q11_a">Bir astronot</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_b" name="q11" value="dogru"><label for="q11_b">Yetenekli ama ezik bir yazılımcı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_c" name="q11"><label for="q11_c">Bir asker</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q11_d" name="q11"><label for="q11_d">Bir suçlu</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>12. 'Arkangel' bölümünde anne, kızını kontrol etmek için ne kullanır?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q12_a" name="q12"><label for="q12_a">GPS bileklik</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_b" name="q12" value="dogru"><label for="q12_b">Beynine yerleştirilen sansür ve takip çipi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_c" name="q12"><label for="q12_c">Drone</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q12_d" name="q12"><label for="q12_d">Gizli kamera</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>13. 'Hang the DJ' bölümündeki teknoloji neyi belirler?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q13_a" name="q13" value="dogru"><label for="q13_a">İlişkilerin ne kadar süreceğini ve mükemmel eşleşmeyi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_b" name="q13"><label for="q13_b">Ne zaman öleceğinizi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_c" name="q13"><label for="q13_c">Hangi müziği seveceğinizi</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q13_d" name="q13"><label for="q13_d">Hangi işi yapacağınızı</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>14. 'White Bear' bölümünde kadın karakter neden sürekli kovalanıp videoya çekilmektedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q14_a" name="q14"><label for="q14_a">Bir realite şovu olduğu için</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_b" name="q14" value="dogru"><label for="q14_b">Çocuk cinayetine yardım ettiği için cezalandırıldığı bir 'Adalet Parkı' olduğu için</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_c" name="q14"><label for="q14_c">Ünlü olduğu için</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q14_d" name="q14"><label for="q14_d">Bir deney olduğu için</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>15. Black Mirror dizisinde birçok bölümde tekrar eden o meşhur şarkı hangisidir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q15_a" name="q15" value="dogru"><label for="q15_a">Anyone Who Knows What Love Is (Will Understand)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_b" name="q15"><label for="q15_b">Exit Music</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_c" name="q15"><label for="q15_c">Heaven is a Place on Earth</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q15_d" name="q15"><label for="q15_d">Panic</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>16. 'Hated in the Nation' bölümünde insanları öldüren mekanik şeyler nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q16_a" name="q16"><label for="q16_a">Kuşlar</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_b" name="q16" value="dogru"><label for="q16_b">Arılar (Robot Arılar)</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_c" name="q16"><label for="q16_c">Sinekler</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q16_d" name="q16"><label for="q16_d">Örümcekler</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>17. 'Black Museum' bölümündeki müze sahibi Rolo Haynes ne sergilemektedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q17_a" name="q17"><label for="q17_a">Eski suç aletlerini</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_b" name="q17" value="dogru"><label for="q17_b">Nörolojik deneylerden kalan sadistik teknolojik objeleri</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_c" name="q17"><label for="q17_c">Uzaylıları</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q17_d" name="q17"><label for="q17_d">Tarihi eserleri</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>18. 'Playtest' bölümünde karakter neyi test eder?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q18_a" name="q18"><label for="q18_a">Yeni bir ilacı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_b" name="q18" value="dogru"><label for="q18_b">Korkularını kullanan bir artırılmış gerçeklik oyununu</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_c" name="q18"><label for="q18_c">Bir arabayı</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q18_d" name="q18"><label for="q18_d">Bir flört uygulamasını</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>19. 'Joan Is Awful' bölümünde Joan hayatını nerede izler?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q19_a" name="q19" value="dogru"><label for="q19_a">Streamberry (Netflix parodisi) platformunda</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_b" name="q19"><label for="q19_b">Sinemada</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_c" name="q19"><label for="q19_c">Haberlerde</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q19_d" name="q19"><label for="q19_d">YouTube'da</label></div>
+            </form>
+        </div>
+
+        <div class="soru-karti">
+            <h3>20. 'Waldo Moment' bölümündeki Waldo nedir?</h3>
+            <form>
+                <div class="sik-kapsayici"><input type="radio" id="q20_a" name="q20"><label for="q20_a">Bir palyaço</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_b" name="q20" value="dogru"><label for="q20_b">Siyasi figür haline gelen mavi bir ayı animasyonu</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_c" name="q20"><label for="q20_c">Bir robot</label></div>
+                <div class="sik-kapsayici"><input type="radio" id="q20_d" name="q20"><label for="q20_d">Bir uzaylı</label></div>
+            </form>
+        </div>
+
+        <button type="button" onclick="testiBitir()" class="bitir-butonu">TESTİ BİTİR VE SONUCU GÖR</button>
+        
+        <div id="sonuc-kutusu">
+            <h2>🏆 SONUÇ EKRANI</h2>
+            <div id="puan-yazisi"></div>
+            <div class="puan-gostergesi" id="toplam-puan-yazisi"></div>
+            <p id="mesaj"></p>
+
+        </div>
+
+    </div> 
+
+    
+<!-- DYNAMIC FOOTER START -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    footer { background-color: var(--footer-bg); color: var(--text-color); padding: 10px 0; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--accent-color); font-size: 11px; }
+    .footer-icerik { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 5px; padding: 0 10px; }
+    .footer-blok { flex: 1; min-width: 180px; background: var(--footer-block-bg); padding: 5px; border-radius: 4px; text-align: center; }
+    .footer-blok h3 { color: var(--highlight-color); margin: 0 0 5px 0; font-size: 12px; text-transform: uppercase; display: block; border-bottom: 1px solid var(--border-color); }
+    .yatay-dizilis { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; }
+    .iletisim-link { display: inline-flex; align-items: center; color: var(--text-muted); text-decoration: none; transition: 0.2s; gap: 3px; }
+    .iletisim-link:hover { color: var(--text-color); }
+    .renkli-ikon { width: 22px; height: 22px; background: var(--surface-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--text-color); text-decoration: none; }
+    .renkli-ikon:hover { transform: scale(1.1); }
+    .fa-instagram { color: #E1306C; } .fa-whatsapp { color: #25D366; } .fa-x-twitter { color: var(--text-color); } .fa-youtube { color: #FF0000; }
+    .telif-mini { width: 100%; text-align: center; font-size: 10px; color: var(--text-muted); margin-top: 5px; padding-top: 5px; border-top: 1px solid var(--border-color); }
+</style>
+<footer>
+    <div class="footer-icerik">
+        <div class="footer-blok">
+            <h3>Hızlı Erişim</h3>
+            <div class="yatay-dizilis">
+                <a href="../../../index.html" class="iletisim-link">Ana Sayfa</a> &bull;
+                <a href="../../../pages/harry_potter/harry.html" class="iletisim-link">HP</a> &bull;
+                <a href="../../../pages/marvel/marvel_ana.html" class="iletisim-link">Marvel</a> &bull;
+                <a href="../../turk-dizi/turk_dizi_ana.html" class="iletisim-link">Diziler</a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>ELİF</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:bagriyanikelif16@gmail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905551111111" target="_blank"  class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/elifbagriyani?igsh=c25idWV1d29uNWRu" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/ElifBagriyanik2?s=08" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-blok">
+            <h3>TAYLAN</h3>
+            <div class="yatay-dizilis">
+                <a href="mailto:ayse@mail.com" target="_blank" class="iletisim-link"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="https://wa.me/905552222222" target="_blank" class="iletisim-link"><i class="fa-brands fa-whatsapp"></i> WP</a>
+                <a href="https://www.instagram.com/taylan_tcr7?igsh=MXZheWl6Y3RqYTV1cg==" target="_blank" class="renkli-ikon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" class="renkli-ikon"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="telif-mini">
+        &copy; 2025 Test Dünyası
+    </div>
+</footer>
+<!-- DYNAMIC FOOTER END -->
+
+
+    <script>
+        function testiBitir() {
+        let dogruSayisi = 0;
+        let yanlisSayisi = 0;
+        let bosSayisi = 0;
+        const soruPuani = 5; 
+        
+        const sorular = document.querySelectorAll('form'); 
+        
+        sorular.forEach((form) => {
+            const secilen = form.querySelector('input[type="radio"]:checked');
+            const etiketler = form.querySelectorAll('label');
+            
+            etiketler.forEach(lbl => {
+                lbl.style.color = "#ecf0f1"; 
+                lbl.style.fontWeight = "normal";
+            });
+
+            if (secilen) {
+                if (secilen.value === "dogru") {
+                    dogruSayisi++;
+                    const label = form.querySelector(`label[for="${secilen.id}"]`);
+                    label.style.color = "#2ecc71"; 
+                    label.style.fontWeight = "bold";
+                    label.innerHTML += " ✅"; 
+                } else {
+                    yanlisSayisi++;
+                    const yanlisLabel = form.querySelector(`label[for="${secilen.id}"]`);
+                    yanlisLabel.style.color = "#e74c3c"; 
+                    yanlisLabel.style.fontWeight = "bold";
+                    yanlisLabel.innerHTML += " ❌"; 
+
+                    const dogruInput = form.querySelector('input[value="dogru"]');
+                    if(dogruInput) {
+                        const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                        dogruLabel.style.color = "#2ecc71";
+                        dogruLabel.style.fontWeight = "bold";
+                        dogruLabel.innerHTML += " (Doğru Cevap)";
+                    }
+                }
+            } else {
+                bosSayisi++;
+                const dogruInput = form.querySelector('input[value="dogru"]');
+                if(dogruInput) {
+                    const dogruLabel = form.querySelector(`label[for="${dogruInput.id}"]`);
+                    dogruLabel.style.color = "#f39c12"; 
+                    dogruLabel.innerHTML += " (Boş Bıraktın)";
+                }
+            }
+        });
+
+        const toplamPuan = dogruSayisi * soruPuani;
+        const sonucKutusu = document.getElementById("sonuc-kutusu");
+        const puanYazisi = document.getElementById("puan-yazisi");
+        const toplamPuanYazisi = document.getElementById("toplam-puan-yazisi");
+        const mesaj = document.getElementById("mesaj");
+
+        sonucKutusu.style.display = "block";
+        
+        // --- GÜNCELLEME BURADA ---
+        puanYazisi.innerHTML = `
+            Doğru Sayısı: <strong>${dogruSayisi}</strong><br>
+            Yanlış Sayısı: <strong>${yanlisSayisi}</strong><br>
+            Boş Sayısı: <strong>${bosSayisi}</strong>
+            <br><br>
+            <button onclick="window.scrollTo(0,0); window.location.reload();" class="bitir-butonu" style="margin-top: 10px; width: auto; padding: 10px 30px; font-size: 16px;">
+                🔄 Testi Tekrar Çöz
+            </button>
+        `;
+        // -------------------------
+
+        toplamPuanYazisi.innerHTML = `TOPLAM PUAN: ${toplamPuan}`;
+
+        if (toplamPuan === 100) {
+            mesaj.innerHTML = "MÜKEMMEL! Konuya tamamen hakimsin! 🏆";
+            mesaj.style.color = "#2ecc71";
+        } else if (toplamPuan >= 80) {
+            mesaj.innerHTML = "Harika iş çıkardın! Çok az eksiğin var. 👏";
+            mesaj.style.color = "#3498db";
+        } else if (toplamPuan >= 50) {
+            mesaj.innerHTML = "Fena değil, ama biraz daha tekrar yapmalısın. 😊";
+            mesaj.style.color = "#f39c12";
+        } else {
+            mesaj.innerHTML = "Sanırım konuyu biraz daha çalışman gerekiyor. Pes etme! 💪";
+            mesaj.style.color = "#e74c3c";
+        }
+
+        sonucKutusu.scrollIntoView({ behavior: 'smooth' });
+    }
+        function acKapaMenu(){
+            var m=document.getElementById("yanMenu"); 
+            if(m.style.width==="300px") m.style.width="0"; else m.style.width="300px";
+        }
+    </script>
+
+    <script>
+        // Theme Toggle Logic
+        // Check saved theme immediately to prevent flash
+        // Theme check moved
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeBtn = document.getElementById("theme-toggle");
+            const body = document.body;
+            if (!themeBtn) return; // Safety
+            const icon = themeBtn.querySelector("i");
+
+            // Update icon state based on current class
+            if (body.classList.contains("light-mode")) {
+                 if(icon) {
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                 }
+            }
+
+            window.toggleTheme = function() {
+                body.classList.toggle("light-mode");
+                const isLight = body.classList.contains("light-mode");
+                
+                if (icon) {
+                    if (isLight) {
+                        icon.classList.remove("fa-sun");
+                        icon.classList.add("fa-moon");
+                        localStorage.setItem("theme", "light");
+                    } else {
+                        icon.classList.remove("fa-moon");
+                        icon.classList.add("fa-sun");
+                        localStorage.setItem("theme", "dark");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
